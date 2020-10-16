@@ -1,0 +1,276 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:2:1-38:12
+MERGED from [org.koin:koin-android-viewmodel:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4db3e7e60aab144805926ad415f109cb/jetified-koin-android-viewmodel-2.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/7a0a18c8973beafef891f69b001585db/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/2ab31b084be90f9d2ee35d4e66a24128/jetified-lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-ktx:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/768669eba0af4a8455374567506cb363/jetified-room-ktx-2.2.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-runtime:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a265aa492309ded6293ec1251ddffea1/room-runtime-2.2.5/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.databinding:databinding-adapters:4.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/56f4158f5bf89bc807acb3777f423cf3/databinding-adapters-4.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:4.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/740cf2bb98eda01830bc8a547de70bdd/databinding-runtime-4.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.2.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/60f445900515fbd617cf4852baf93647/material-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/2504df3743b695dba8f8f673d83d5c9f/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
+MERGED from [org.koin:koin-android-scope:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/846b2ad52b989f39af312230a1b6ad2b/jetified-koin-android-scope-2.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/284a2a218f7f6f43d29c2ab8e18ab1ed/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.3.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c34fed2404052a726fb54191e7834e29/jetified-core-ktx-1.3.1/AndroidManifest.xml:2:1-9:12
+MERGED from [org.koin:koin-android:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/7c09faecffd5244aec31213e9ee58efe/jetified-koin-android-2.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b80dd96b684513dfc52502426462cf28/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b4dd2bf19774dff90e7155c082dcf970/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/27df1e4f5a063859d0f5361a0f32f1fe/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/076f786bd3356cd31c2c25a4e6eb8238/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f8c4a5a37c3ae7b9044ef60e3c753c37/fragment-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9946d3e5b71c1d22b6ed0234058606a4/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/02970b4ed63a7e4c8fac246850101806/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0547f6cc4189adffc9734c5d7f7465df/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/60d327c8233c46ffd15d5ca4717cda80/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/34a78877b19be9b2385f74c6884a5c83/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4758bd8d280125927d04f0616d0e9bd1/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d89f5ebf8b568de855e5c904c0dd1a36/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3ec108f2860a9f60bc7864ce9886cfe9/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c1dac59dab754155d1413f33f394d450/jetified-activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/16f03aec782cd43772f8a9d2e1ba3aac/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9e0bc914ab68d073ea7fa6d73f6db120/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/583b7a6edff6cfc65433865e6ae1ef1e/core-1.3.1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/322321287280b0e9fb1c9999257d125d/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/957899f3e87504bf2da3508105a4b5bf/lifecycle-livedata-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/8ca9355c008a155f862a6937b84db50e/jetified-lifecycle-viewmodel-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/df94248ed024502458159218a2eedac5/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/90741939ff11e87740d0d7bdd3b8bbc9/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d2787d4b71a473c2e246b08e233993a0/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a5a4103bc0462f5b36063dd856f1399d/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dcb4cf63235407885ea4bfb18b3e8245/sqlite-framework-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/af176930b32c5a7c044fe9e30a245540/sqlite-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:viewbinding:4.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f30c81656b7da38418bf268feb5b5c76/jetified-viewbinding-4.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/02798deba80efca9ba86f44198fca25b/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/5ce33a2b59e728956b1c5e11f2fa2a8c/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c7209da5feb5a9a2920e4bd83635d413/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4d7aa4d1ec9d877103b6182c5dbe7244/jetified-gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/752c7a28930b2b3b3f54ca99a3ed2bbb/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/34d48c4308e9a53c56122ca2ce28a1f9/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1872025495ba5bf9b3d73aa946ed8fab/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:2:1-38:12
+	package
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:3:5-29
+		INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+		INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:2:1-38:12
+		INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:2:1-38:12
+		INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:7:5-37:19
+MERGED from [org.koin:koin-android-viewmodel:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4db3e7e60aab144805926ad415f109cb/jetified-koin-android-viewmodel-2.0.1/AndroidManifest.xml:7:5-20
+MERGED from [org.koin:koin-android-viewmodel:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4db3e7e60aab144805926ad415f109cb/jetified-koin-android-viewmodel-2.0.1/AndroidManifest.xml:7:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/7a0a18c8973beafef891f69b001585db/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/7a0a18c8973beafef891f69b001585db/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.room:room-runtime:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a265aa492309ded6293ec1251ddffea1/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a265aa492309ded6293ec1251ddffea1/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
+MERGED from [com.google.android.material:material:1.2.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/60f445900515fbd617cf4852baf93647/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/60f445900515fbd617cf4852baf93647/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/2504df3743b695dba8f8f673d83d5c9f/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/2504df3743b695dba8f8f673d83d5c9f/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [org.koin:koin-android-scope:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/846b2ad52b989f39af312230a1b6ad2b/jetified-koin-android-scope-2.0.1/AndroidManifest.xml:7:5-20
+MERGED from [org.koin:koin-android-scope:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/846b2ad52b989f39af312230a1b6ad2b/jetified-koin-android-scope-2.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b80dd96b684513dfc52502426462cf28/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b80dd96b684513dfc52502426462cf28/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b4dd2bf19774dff90e7155c082dcf970/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b4dd2bf19774dff90e7155c082dcf970/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.core:core:1.3.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/583b7a6edff6cfc65433865e6ae1ef1e/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/583b7a6edff6cfc65433865e6ae1ef1e/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/02798deba80efca9ba86f44198fca25b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/02798deba80efca9ba86f44198fca25b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4d7aa4d1ec9d877103b6182c5dbe7244/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4d7aa4d1ec9d877103b6182c5dbe7244/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/583b7a6edff6cfc65433865e6ae1ef1e/core-1.3.1/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:14:9-40
+	android:usesCleartextTraffic
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:15:9-44
+	android:name
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:8:9-58
+activity#com.nyt.movies.presentation.view.splash.SplashActivity
+ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:17:9-26:20
+	android:configChanges
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:19:13-74
+	android:theme
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:20:13-51
+	android:name
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:18:13-68
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:24:27-74
+activity#com.nyt.movies.presentation.view.movies.details.MovieDetailsActivity
+ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:28:9-31:59
+	android:configChanges
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:30:13-74
+	android:theme
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:31:13-56
+	android:name
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:29:13-82
+activity#com.nyt.movies.presentation.view.movies.list.ListMoviesActivity
+ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:33:9-36:47
+	android:configChanges
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:35:13-74
+	android:theme
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml:34:13-77
+uses-sdk
+INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+MERGED from [org.koin:koin-android-viewmodel:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4db3e7e60aab144805926ad415f109cb/jetified-koin-android-viewmodel-2.0.1/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-android-viewmodel:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4db3e7e60aab144805926ad415f109cb/jetified-koin-android-viewmodel-2.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/7a0a18c8973beafef891f69b001585db/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/7a0a18c8973beafef891f69b001585db/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/2ab31b084be90f9d2ee35d4e66a24128/jetified-lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/2ab31b084be90f9d2ee35d4e66a24128/jetified-lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/768669eba0af4a8455374567506cb363/jetified-room-ktx-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/768669eba0af4a8455374567506cb363/jetified-room-ktx-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a265aa492309ded6293ec1251ddffea1/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a265aa492309ded6293ec1251ddffea1/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-adapters:4.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/56f4158f5bf89bc807acb3777f423cf3/databinding-adapters-4.0.1/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:4.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/56f4158f5bf89bc807acb3777f423cf3/databinding-adapters-4.0.1/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/740cf2bb98eda01830bc8a547de70bdd/databinding-runtime-4.0.1/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/740cf2bb98eda01830bc8a547de70bdd/databinding-runtime-4.0.1/AndroidManifest.xml:22:5-44
+MERGED from [com.google.android.material:material:1.2.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/60f445900515fbd617cf4852baf93647/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/60f445900515fbd617cf4852baf93647/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/2504df3743b695dba8f8f673d83d5c9f/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/2504df3743b695dba8f8f673d83d5c9f/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [org.koin:koin-android-scope:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/846b2ad52b989f39af312230a1b6ad2b/jetified-koin-android-scope-2.0.1/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-android-scope:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/846b2ad52b989f39af312230a1b6ad2b/jetified-koin-android-scope-2.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/284a2a218f7f6f43d29c2ab8e18ab1ed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/284a2a218f7f6f43d29c2ab8e18ab1ed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.3.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c34fed2404052a726fb54191e7834e29/jetified-core-ktx-1.3.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c34fed2404052a726fb54191e7834e29/jetified-core-ktx-1.3.1/AndroidManifest.xml:5:5-7:41
+MERGED from [org.koin:koin-android:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/7c09faecffd5244aec31213e9ee58efe/jetified-koin-android-2.0.1/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-android:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/7c09faecffd5244aec31213e9ee58efe/jetified-koin-android-2.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b80dd96b684513dfc52502426462cf28/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b80dd96b684513dfc52502426462cf28/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b4dd2bf19774dff90e7155c082dcf970/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b4dd2bf19774dff90e7155c082dcf970/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/27df1e4f5a063859d0f5361a0f32f1fe/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/27df1e4f5a063859d0f5361a0f32f1fe/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/076f786bd3356cd31c2c25a4e6eb8238/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/076f786bd3356cd31c2c25a4e6eb8238/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f8c4a5a37c3ae7b9044ef60e3c753c37/fragment-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f8c4a5a37c3ae7b9044ef60e3c753c37/fragment-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9946d3e5b71c1d22b6ed0234058606a4/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9946d3e5b71c1d22b6ed0234058606a4/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/02970b4ed63a7e4c8fac246850101806/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/02970b4ed63a7e4c8fac246850101806/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0547f6cc4189adffc9734c5d7f7465df/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/0547f6cc4189adffc9734c5d7f7465df/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/60d327c8233c46ffd15d5ca4717cda80/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/60d327c8233c46ffd15d5ca4717cda80/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/34a78877b19be9b2385f74c6884a5c83/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/34a78877b19be9b2385f74c6884a5c83/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4758bd8d280125927d04f0616d0e9bd1/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4758bd8d280125927d04f0616d0e9bd1/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d89f5ebf8b568de855e5c904c0dd1a36/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d89f5ebf8b568de855e5c904c0dd1a36/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3ec108f2860a9f60bc7864ce9886cfe9/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/3ec108f2860a9f60bc7864ce9886cfe9/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c1dac59dab754155d1413f33f394d450/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c1dac59dab754155d1413f33f394d450/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/16f03aec782cd43772f8a9d2e1ba3aac/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/16f03aec782cd43772f8a9d2e1ba3aac/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9e0bc914ab68d073ea7fa6d73f6db120/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/9e0bc914ab68d073ea7fa6d73f6db120/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/583b7a6edff6cfc65433865e6ae1ef1e/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/583b7a6edff6cfc65433865e6ae1ef1e/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/322321287280b0e9fb1c9999257d125d/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/322321287280b0e9fb1c9999257d125d/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/957899f3e87504bf2da3508105a4b5bf/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/957899f3e87504bf2da3508105a4b5bf/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/8ca9355c008a155f862a6937b84db50e/jetified-lifecycle-viewmodel-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/8ca9355c008a155f862a6937b84db50e/jetified-lifecycle-viewmodel-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/df94248ed024502458159218a2eedac5/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/df94248ed024502458159218a2eedac5/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/90741939ff11e87740d0d7bdd3b8bbc9/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/90741939ff11e87740d0d7bdd3b8bbc9/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d2787d4b71a473c2e246b08e233993a0/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/d2787d4b71a473c2e246b08e233993a0/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a5a4103bc0462f5b36063dd856f1399d/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a5a4103bc0462f5b36063dd856f1399d/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dcb4cf63235407885ea4bfb18b3e8245/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/dcb4cf63235407885ea4bfb18b3e8245/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/af176930b32c5a7c044fe9e30a245540/sqlite-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/af176930b32c5a7c044fe9e30a245540/sqlite-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f30c81656b7da38418bf268feb5b5c76/jetified-viewbinding-4.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.0.1] /home/marcelo/.gradle/caches/transforms-2/files-2.1/f30c81656b7da38418bf268feb5b5c76/jetified-viewbinding-4.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/02798deba80efca9ba86f44198fca25b/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/02798deba80efca9ba86f44198fca25b/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/5ce33a2b59e728956b1c5e11f2fa2a8c/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/5ce33a2b59e728956b1c5e11f2fa2a8c/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c7209da5feb5a9a2920e4bd83635d413/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/c7209da5feb5a9a2920e4bd83635d413/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4d7aa4d1ec9d877103b6182c5dbe7244/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/4d7aa4d1ec9d877103b6182c5dbe7244/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/752c7a28930b2b3b3f54ca99a3ed2bbb/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/752c7a28930b2b3b3f54ca99a3ed2bbb/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/34d48c4308e9a53c56122ca2ce28a1f9/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/34d48c4308e9a53c56122ca2ce28a1f9/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1872025495ba5bf9b3d73aa946ed8fab/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/1872025495ba5bf9b3d73aa946ed8fab/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+		INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+		ADDED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+		INJECTED from /home/marcelo/Documentos/NYTMovies/app/src/main/AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a265aa492309ded6293ec1251ddffea1/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a265aa492309ded6293ec1251ddffea1/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a265aa492309ded6293ec1251ddffea1/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.2.5] /home/marcelo/.gradle/caches/transforms-2/files-2.1/a265aa492309ded6293ec1251ddffea1/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b4dd2bf19774dff90e7155c082dcf970/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b4dd2bf19774dff90e7155c082dcf970/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b4dd2bf19774dff90e7155c082dcf970/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b4dd2bf19774dff90e7155c082dcf970/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/b4dd2bf19774dff90e7155c082dcf970/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
