@@ -12,10 +12,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorWhite"
-            app:layoutDescription="@xml/activity_movies_details_xml_constraintlayout_scene">
+            app:layoutDescription="@xml/activity_heroes_details_xml_constraintlayout_scene">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/image_view_movie_poster"
+                android:id="@+id/image_view_hero_poster"
                 android:layout_width="0dp"
                 android:layout_height="250dp"
                 android:src="@drawable/placeholder"
@@ -49,24 +49,24 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
                 android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="@id/image_view_movie_poster"
+                app:layout_constraintBottom_toBottomOf="@id/image_view_hero_poster"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraint_layout_movie_details"
+                android:id="@+id/constraint_layout_hero_details"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="32dp"
-                android:background="@drawable/movie_rounded_background_32"
+                android:background="@drawable/hero_rounded_background_32"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/guideline">
 
                 <TextView
-                    android:id="@+id/text_view_movie_title"
+                    android:id="@+id/text_view_hero_title"
                     style="@style/HeadlineTextAppearance"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/text_view_movie_title"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_hero_title"
                     tools:text="10/10/2010" />
 
                 <TextView

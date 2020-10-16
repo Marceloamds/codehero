@@ -8,12 +8,12 @@
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_movies"
+            android:id="@+id/recycler_view_heroes"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:itemCount="50"
-            tools:listitem="@layout/item_movie" />
+            tools:listitem="@layout/item_hero" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/empty_list_layout"
@@ -65,7 +65,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/text_view_empty_message" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.nyt.movies.presentation.util.placeholder.PlaceholderView
+        <com.hero.code.presentation.util.placeholder.PlaceholderView
             android:id="@+id/placeholder_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

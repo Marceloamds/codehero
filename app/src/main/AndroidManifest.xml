@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nyt.movies">
+    package="com.hero.code">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".presentation.NYTMoviesApplication"
+        android:name="com.hero.code.presentation.CodeHeroApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,7 +15,7 @@
         android:usesCleartextTraffic="true">
 
         <activity
-            android:name=".presentation.view.splash.SplashActivity"
+            android:name="com.hero.code.presentation.view.splash.SplashActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.Splash">
             <intent-filter>
@@ -26,12 +26,12 @@
         </activity>
 
         <activity
-            android:name=".presentation.view.movies.details.MovieDetailsActivity"
+            android:name="com.hero.code.presentation.view.heroes.details.HeroDetailsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionbar" />
 
         <activity
-            android:name=".presentation.view.movies.list.ListMoviesActivity"
+            android:name="com.hero.code.presentation.view.heroes.list.ListHeroesActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme" />
     </application>
