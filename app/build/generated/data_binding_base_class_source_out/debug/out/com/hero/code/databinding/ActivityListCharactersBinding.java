@@ -9,13 +9,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.tabs.TabLayout;
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 import com.hero.code.R;
 import com.hero.code.presentation.util.placeholder.PlaceholderView;
 import java.lang.Deprecated;
@@ -44,10 +43,7 @@ public abstract class ActivityListCharactersBinding extends ViewDataBinding {
   public final PlaceholderView placeholderView;
 
   @NonNull
-  public final TextInputEditText textCharacterNameEditText;
-
-  @NonNull
-  public final TextInputLayout textCharacterNameInputLayout;
+  public final SearchView searchViewCharacter;
 
   @NonNull
   public final TextView textCharacterNameLabel;
@@ -67,8 +63,7 @@ public abstract class ActivityListCharactersBinding extends ViewDataBinding {
   protected ActivityListCharactersBinding(Object _bindingComponent, View _root,
       int _localFieldCount, ImageView buttonNextPage, ImageView buttonPreviousPage,
       Button buttonTryAgain, ViewPager2 characterViewPager, ConstraintLayout emptyListLayout,
-      ImageView imageViewEmptyList, PlaceholderView placeholderView,
-      TextInputEditText textCharacterNameEditText, TextInputLayout textCharacterNameInputLayout,
+      ImageView imageViewEmptyList, PlaceholderView placeholderView, SearchView searchViewCharacter,
       TextView textCharacterNameLabel, TextView textListCharactersTitle,
       TextView textViewEmptyMessage, TabLayout viewPagerIndicator, TextView viewPagerLabel) {
     super(_bindingComponent, _root, _localFieldCount);
@@ -79,8 +74,7 @@ public abstract class ActivityListCharactersBinding extends ViewDataBinding {
     this.emptyListLayout = emptyListLayout;
     this.imageViewEmptyList = imageViewEmptyList;
     this.placeholderView = placeholderView;
-    this.textCharacterNameEditText = textCharacterNameEditText;
-    this.textCharacterNameInputLayout = textCharacterNameInputLayout;
+    this.searchViewCharacter = searchViewCharacter;
     this.textCharacterNameLabel = textCharacterNameLabel;
     this.textListCharactersTitle = textListCharactersTitle;
     this.textViewEmptyMessage = textViewEmptyMessage;

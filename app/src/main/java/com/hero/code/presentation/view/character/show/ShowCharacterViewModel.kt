@@ -8,6 +8,7 @@ import com.hero.code.presentation.util.base.BaseViewModel
 
 class ShowCharacterViewModel constructor(
     private val position: Int,
+    private val query: String,
     private val getCharactersList: GetCharactersList,
 ) : BaseViewModel() {
 
@@ -25,7 +26,7 @@ class ShowCharacterViewModel constructor(
 
     private fun requestCharacters() {
         launchDataLoad(onFailure = ::onFailure) {
-            _charactersList.value = getCharactersList.execute(position)
+            _charactersList.value = getCharactersList.execute(position, query)
         }
     }
 

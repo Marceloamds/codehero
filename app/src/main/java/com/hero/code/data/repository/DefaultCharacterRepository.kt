@@ -9,14 +9,17 @@ class DefaultCharacterRepository constructor(
     private val apiClient: ApiClient
 ) : CharacterRepository {
 
-    override suspend fun getCharacterList(page: Int): List<Character?>? {
+    override suspend fun getCharacterList(page: Int, query: String): List<Character?>? {
         return apiClient.getCharactersList(
             offset = page * CHARACTERS_PER_PAGE,
-            limit = CHARACTERS_PER_PAGE
+            limit = CHARACTERS_PER_PAGE,
+            if (query.isEmpty()) null else query
         )?.data?.results?.map { it?.toDomainObject() }
     }
 
-    override suspend fun getCharacterListTotal(): Int? {
-        return apiClient.getCharactersListTotal()?.data?.total
+    override suspend fun getCharacterListTotal(query: String): Int? {
+        return apiClient.getCharactersListTotal(
+            if (query.isEmpty()) null else query
+        )?.data?.total
     }
 }

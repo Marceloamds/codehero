@@ -8,7 +8,5 @@ class QueryChangesHelper(private val callback: (String) -> Unit) : SearchView.On
         return true
     }
 
-    override fun onQueryTextChange(p0: String?): Boolean {
-        return true
-    }
+    override fun onQueryTextChange(p0: String?) = true
 }

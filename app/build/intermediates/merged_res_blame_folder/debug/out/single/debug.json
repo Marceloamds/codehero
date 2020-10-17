@@ -1,19 +1,15 @@
 [
     {
-        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable_button_background.xml.flat",
-        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable/button_background.xml"
-    },
-    {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable-xhdpi_placeholder.png.flat",
-        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable-xhdpi/placeholder.png"
-    },
-    {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable-xhdpi_placeholder.png.flat",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable-xhdpi/placeholder.png"
     },
     {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -34,6 +30,10 @@
     {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable_ic_movie.xml.flat",
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable/ic_movie.xml"
+    },
+    {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable_rounded_border_background.xml.flat",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable/rounded_border_background.xml"
     },
     {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",

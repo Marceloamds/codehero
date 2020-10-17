@@ -10,7 +10,8 @@ interface ApiService {
     @GET("characters")
     suspend fun getCharacterList(
         @Query("offset") offset: Int,
-        @Query("limit") limit: Int
+        @Query("limit") limit: Int,
+        @Query("name") nameQuery: String? = null
     ): Response<ApiCharacterResponse>
 
     @GET("characters")

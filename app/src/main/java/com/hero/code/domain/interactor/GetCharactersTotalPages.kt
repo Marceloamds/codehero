@@ -8,8 +8,8 @@ class GetCharactersTotalPages constructor(
     private val characterRepository: CharacterRepository
 ) {
 
-    suspend fun execute(): Int {
-        val totalCharacters = characterRepository.getCharacterListTotal() ?: 0
+    suspend fun execute(query: String): Int {
+        val totalCharacters = characterRepository.getCharacterListTotal(query) ?: 0
         return ceil(totalCharacters / CHARACTERS_PER_PAGE.toDouble()).toInt()
     }
 }

@@ -19,5 +19,5 @@ fun viewModelModule() = module {
 
     viewModel { SplashViewModel() }
 
-    viewModel { (position : Int) -> ShowCharacterViewModel(position, get()) }
+    viewModel { (position : Int, query: String) -> ShowCharacterViewModel(position, query, get()) }
 }

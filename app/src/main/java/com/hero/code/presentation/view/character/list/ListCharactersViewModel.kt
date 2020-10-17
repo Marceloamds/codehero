@@ -9,13 +9,29 @@ class ListCharactersViewModel(
     private val getCharactersTotalPages: GetCharactersTotalPages
 ) : BaseViewModel() {
 
-    val totalPages: LiveData<Int> get() = _totalPages
+    val listCharactersInfo: LiveData<ListCharactersInfo> get() = _listCharactersInfo
 
-    private val _totalPages by lazy { MutableLiveData<Int>() }
+    private val _listCharactersInfo by lazy { MutableLiveData<ListCharactersInfo>() }
+
+    var currentQuery = ""
 
     init {
+        getListCharactersInfo()
+    }
+
+    fun onQuerySubmitted(query: String?) {
+        query?.let {
+            currentQuery = it
+            getListCharactersInfo()
+        }
+    }
+
+    private fun getListCharactersInfo() {
         launchDataLoad {
-            _totalPages.value = getCharactersTotalPages.execute()
+            _listCharactersInfo.value = ListCharactersInfo(
+                getCharactersTotalPages.execute(currentQuery),
+                currentQuery
+            )
         }
     }
 }

@@ -19,8 +19,9 @@ class ShowCharacterFragment : Fragment() {
     private lateinit var binding: FragmentShowCharacterBinding
 
     private val position by lazy { arguments?.getInt(POSITION_EXTRA, 0) ?: 0 }
+    private val query by lazy { arguments?.getString(QUERY_EXTRA, "") ?: "" }
 
-    private val _viewModel: ShowCharacterViewModel by viewModel { parametersOf(position) }
+    private val _viewModel: ShowCharacterViewModel by viewModel { parametersOf(position, query) }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,7 +29,6 @@ class ShowCharacterFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentShowCharacterBinding.inflate(inflater, container, false)
-        setupUi()
         subscribeUi()
         return binding.root
     }
@@ -36,12 +36,6 @@ class ShowCharacterFragment : Fragment() {
     private fun subscribeUi() {
         _viewModel.charactersList.observe(viewLifecycleOwner, ::onCharactersReceived)
         _viewModel.goTo.observe(viewLifecycleOwner, ::onGoTo)
-    }
-
-    private fun setupUi() {
-        with(binding) {
-
-        }
     }
 
     private fun onCharactersReceived(characterList: List<Character?>?) {
@@ -61,10 +55,12 @@ class ShowCharacterFragment : Fragment() {
 
     companion object {
         private const val POSITION_EXTRA = "POSITION_EXTRA"
+        private const val QUERY_EXTRA = "QUERY_EXTRA"
 
-        fun newInstance(position: Int) = ShowCharacterFragment().apply {
+        fun newInstance(position: Int, query: String) = ShowCharacterFragment().apply {
             val bundle = Bundle()
             bundle.putInt(POSITION_EXTRA, position)
+            bundle.putString(QUERY_EXTRA, query)
             arguments = bundle
         }
 

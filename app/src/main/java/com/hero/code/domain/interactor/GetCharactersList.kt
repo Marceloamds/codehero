@@ -6,5 +6,5 @@ class GetCharactersList constructor(
     private val characterRepository: CharacterRepository
 ) {
 
-    suspend fun execute(page: Int) = characterRepository.getCharacterList(page)
+    suspend fun execute(page: Int, query: String) = characterRepository.getCharacterList(page, query)
 }

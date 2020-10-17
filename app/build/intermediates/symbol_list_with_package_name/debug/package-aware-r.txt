@@ -1541,7 +1541,6 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-drawable button_background
 drawable default_pager_tab
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1595,6 +1594,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pager_tab_selector
 drawable placeholder
+drawable rounded_border_background
 drawable selected_pager_tab
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -1908,6 +1908,7 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
+id search_view_character
 id search_voice_btn
 id second_character
 id second_divider
@@ -1966,8 +1967,6 @@ id textSpacerNoTitle
 id textStart
 id textWatcher
 id text_character_name
-id text_character_name_edit_text
-id text_character_name_input_layout
 id text_character_name_label
 id text_input_end_icon
 id text_input_start_icon
@@ -2535,6 +2534,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style SearchViewTheme
 style ShapeAppearance_MaterialComponents
 style ShapeAppearance_MaterialComponents_LargeComponent
 style ShapeAppearance_MaterialComponents_MediumComponent

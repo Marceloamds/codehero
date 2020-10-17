@@ -28,27 +28,41 @@
             app:layout_constraintStart_toStartOf="@id/text_list_characters_title"
             app:layout_constraintTop_toBottomOf="@id/text_list_characters_title" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/text_character_name_input_layout"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/text_character_name_input_layout"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="32dp"-->
+        <!--            android:layout_marginHorizontal="42dp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/text_character_name_label">-->
+
+        <!--            <com.google.android.material.textfield.TextInputEditText-->
+        <!--                android:id="@+id/text_character_name_edit_text"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:textSize="12sp"-->
+        <!--                android:background="@null"-->
+        <!--                android:padding="4dp"-->
+        <!--                android:textColor="@color/colorPrimary"-->
+        <!--                app:layout_constraintStart_toStartOf="@id/text_list_characters_title"-->
+        <!--                app:layout_constraintTop_toBottomOf="@id/text_list_characters_title" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view_character"
             android:layout_width="0dp"
             android:layout_height="32dp"
             android:layout_marginHorizontal="42dp"
+            android:background="@drawable/rounded_border_background"
+            android:padding="0dp"
+            android:theme="@style/SearchViewTheme"
+            app:iconifiedByDefault="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_character_name_label">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/text_character_name_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:background="@null"
-                android:padding="4dp"
-                android:textColor="@color/colorPrimary"
-                app:layout_constraintStart_toStartOf="@id/text_list_characters_title"
-                app:layout_constraintTop_toBottomOf="@id/text_list_characters_title" />
-        </com.google.android.material.textfield.TextInputLayout>
+            app:layout_constraintTop_toBottomOf="@id/text_character_name_label"
+            app:searchIcon="@null" />
 
         <TextView
             android:id="@+id/view_pager_label"
@@ -62,7 +76,7 @@
             android:textColor="@color/colorWhite"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_character_name_input_layout" />
+            app:layout_constraintTop_toBottomOf="@id/search_view_character" />
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/character_view_pager"
@@ -107,10 +121,10 @@
             app:layout_constraintEnd_toStartOf="@id/button_next_page"
             app:layout_constraintStart_toEndOf="@id/button_previous_page"
             app:tabBackground="@drawable/pager_tab_selector"
+            app:tabGravity="center"
             app:tabIndicatorHeight="0dp"
             app:tabMaxWidth="44dp"
             app:tabMinWidth="44dp"
-            app:tabGravity="fill"
             app:tabMode="scrollable"
             app:tabSelectedTextColor="@color/colorWhite"
             app:tabTextAppearance="@style/TabTextAppearance"
@@ -156,7 +170,7 @@
                 android:layout_height="48dp"
                 android:layout_margin="48dp"
                 android:alpha="0.8"
-                android:background="@drawable/button_background"
+                android:background="@drawable/rounded_border_background"
                 android:text="@string/global_try_again"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
