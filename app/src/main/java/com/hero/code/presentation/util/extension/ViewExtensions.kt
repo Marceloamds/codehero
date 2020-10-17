@@ -38,6 +38,7 @@ fun setWindowFlag(bits: Int, on: Boolean, window: Window) {
 fun ImageView.load(url: String?) {
     val requestOptions = RequestOptions().apply {
         placeholder(R.drawable.placeholder)
+
     }
-    Glide.with(this).load(url).apply(requestOptions).into(this)
+    Glide.with(this).load(url).circleCrop().apply(requestOptions).into(this)
 }

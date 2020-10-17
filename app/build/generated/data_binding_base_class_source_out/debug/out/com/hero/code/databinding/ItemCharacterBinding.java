@@ -4,11 +4,11 @@ package com.hero.code.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.Guideline;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.hero.code.R;
@@ -20,22 +20,18 @@ public abstract class ItemCharacterBinding extends ViewDataBinding {
   public final ConstraintLayout constraintLayoutHeroPreview;
 
   @NonNull
-  public final Guideline guidelineVertical;
+  public final ImageView imageCharacter;
 
   @NonNull
-  public final TextView textViewCharacterReview;
-
-  @NonNull
-  public final TextView textViewCharacterTitle;
+  public final TextView textCharacterName;
 
   protected ItemCharacterBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ConstraintLayout constraintLayoutHeroPreview, Guideline guidelineVertical,
-      TextView textViewCharacterReview, TextView textViewCharacterTitle) {
+      ConstraintLayout constraintLayoutHeroPreview, ImageView imageCharacter,
+      TextView textCharacterName) {
     super(_bindingComponent, _root, _localFieldCount);
     this.constraintLayoutHeroPreview = constraintLayoutHeroPreview;
-    this.guidelineVertical = guidelineVertical;
-    this.textViewCharacterReview = textViewCharacterReview;
-    this.textViewCharacterTitle = textViewCharacterTitle;
+    this.imageCharacter = imageCharacter;
+    this.textCharacterName = textCharacterName;
   }
 
   @NonNull

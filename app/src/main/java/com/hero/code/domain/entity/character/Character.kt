@@ -10,5 +10,5 @@ data class Character(
     val modified: Date? = null,
     val resourceURI: String? = null,
     val urls: List<Url>? = null,
-    val thumbnail: Image? = null,
+    val thumbnail: String? = null,
 ) : Serializable

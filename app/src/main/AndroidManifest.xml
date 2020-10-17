@@ -31,8 +31,8 @@
             android:theme="@style/AppTheme.NoActionbar" />
 
         <activity
-            android:name="com.hero.code.presentation.view.heroes.list.ListCharacterActivity"
+            android:name="com.hero.code.presentation.view.heroes.list.ListCharactersActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme.NoActionbar" />
     </application>
 </manifest>

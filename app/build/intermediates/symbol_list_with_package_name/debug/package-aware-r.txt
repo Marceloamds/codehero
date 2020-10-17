@@ -1776,7 +1776,6 @@ id group_divider
 id grouping
 id groups
 id guideline
-id guideline_vertical
 id hideable
 id home
 id homeAsUp
@@ -1787,6 +1786,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_character
 id image_view_empty_list
 id image_view_hero_poster
 id info
@@ -1952,10 +1952,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textWatcher
+id text_character_name
 id text_input_end_icon
 id text_input_start_icon
-id text_view_character_review
-id text_view_character_title
 id text_view_empty_message
 id text_view_hero_title
 id text_view_opening_date
@@ -2474,8 +2473,6 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style EmptyTheme
-style HeadlineTextAppearance
-style HelperTextAppearance
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
 style MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar
@@ -2539,7 +2536,6 @@ style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year
 style ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox
 style ShapeAppearanceOverlay_TopLeftCut
 style ShapeAppearanceOverlay_TopRightDifferentCornerSize
-style SubTextAppearance
 style Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style Test_Theme_MaterialComponents_MaterialCalendar
 style Test_Widget_MaterialComponents_MaterialCalendar
@@ -2551,7 +2547,6 @@ style TestStyleWithThemeLineHeightAttribute
 style TestStyleWithoutLineHeight
 style TestThemeWithLineHeight
 style TestThemeWithLineHeightDisabled
-style TextAppearance
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2
@@ -2760,7 +2755,6 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
 style ThemeOverlayColorAccentRed
-style TitleTextAppearance
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

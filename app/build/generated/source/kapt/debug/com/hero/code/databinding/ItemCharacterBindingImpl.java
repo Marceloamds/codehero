@@ -14,31 +14,25 @@ public class ItemCharacterBindingImpl extends ItemCharacterBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.constraint_layout_hero_preview, 1);
-        sViewsWithIds.put(R.id.guideline_vertical, 2);
-        sViewsWithIds.put(R.id.text_view_character_title, 3);
-        sViewsWithIds.put(R.id.text_view_character_review, 4);
+        sViewsWithIds.put(R.id.image_character, 1);
+        sViewsWithIds.put(R.id.text_character_name, 2);
     }
     // views
-    @NonNull
-    private final android.widget.ScrollView mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public ItemCharacterBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
     }
     private ItemCharacterBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]
-            , (androidx.constraintlayout.widget.Guideline) bindings[2]
-            , (android.widget.TextView) bindings[4]
-            , (android.widget.TextView) bindings[3]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
+            , (android.widget.ImageView) bindings[1]
+            , (android.widget.TextView) bindings[2]
             );
-        this.mboundView0 = (android.widget.ScrollView) bindings[0];
-        this.mboundView0.setTag(null);
+        this.constraintLayoutHeroPreview.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
