@@ -1,15 +1,14 @@
 package com.hero.code.data.client
 
-import com.hero.code.data.entity.ApiHeroesList
+import com.hero.code.data.entity.ApiCharacterResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET("reviews/search.json")
-    suspend fun getHeroesList(
+    @GET("characters")
+    suspend fun getCharacterList(
         @Query("offset") offset: Int,
-        @Query("query") query: String
-    ): Response<ApiHeroesList>
+    ): Response<ApiCharacterResponse>
 }

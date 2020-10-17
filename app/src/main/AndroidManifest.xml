@@ -26,12 +26,12 @@
         </activity>
 
         <activity
-            android:name="com.hero.code.presentation.view.heroes.details.HeroDetailsActivity"
+            android:name="com.hero.code.presentation.view.heroes.details.CharacterDetailsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionbar" />
 
         <activity
-            android:name="com.hero.code.presentation.view.heroes.list.ListHeroesActivity"
+            android:name="com.hero.code.presentation.view.heroes.list.ListCharacterActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme" />
     </application>

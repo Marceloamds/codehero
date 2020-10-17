@@ -6,10 +6,10 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
-import com.hero.code.databinding.ActivityListHeroesBindingImpl;
-import com.hero.code.databinding.ActivityHeroesDetailsBindingImpl;
+import com.hero.code.databinding.ActivityCharacterDetailsBindingImpl;
+import com.hero.code.databinding.ActivityListCharactersBindingImpl;
 import com.hero.code.databinding.ActivitySplashBindingImpl;
-import com.hero.code.databinding.ItemHeroBindingImpl;
+import com.hero.code.databinding.ItemCharacterBindingImpl;
 import com.hero.code.databinding.ItemProgressBindingImpl;
 import com.hero.code.databinding.LoadingPlaceholderBindingImpl;
 import java.lang.IllegalArgumentException;
@@ -23,13 +23,13 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_ACTIVITYLISTHEROES = 1;
+  private static final int LAYOUT_ACTIVITYCHARACTERDETAILS = 1;
 
-  private static final int LAYOUT_ACTIVITYHEROESDETAILS = 2;
+  private static final int LAYOUT_ACTIVITYLISTCHARACTERS = 2;
 
   private static final int LAYOUT_ACTIVITYSPLASH = 3;
 
-  private static final int LAYOUT_ITEMHERO = 4;
+  private static final int LAYOUT_ITEMCHARACTER = 4;
 
   private static final int LAYOUT_ITEMPROGRESS = 5;
 
@@ -38,10 +38,10 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(6);
 
   static {
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.activity_list_heroes, LAYOUT_ACTIVITYLISTHEROES);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.activity_heroes_details, LAYOUT_ACTIVITYHEROESDETAILS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.activity_character_details, LAYOUT_ACTIVITYCHARACTERDETAILS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.activity_list_characters, LAYOUT_ACTIVITYLISTCHARACTERS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.item_hero, LAYOUT_ITEMHERO);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.item_character, LAYOUT_ITEMCHARACTER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.item_progress, LAYOUT_ITEMPROGRESS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.loading_placeholder, LAYOUT_LOADINGPLACEHOLDER);
   }
@@ -55,17 +55,17 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
-        case  LAYOUT_ACTIVITYLISTHEROES: {
-          if ("layout/activity_list_heroes_0".equals(tag)) {
-            return new ActivityListHeroesBindingImpl(component, view);
+        case  LAYOUT_ACTIVITYCHARACTERDETAILS: {
+          if ("layout/activity_character_details_0".equals(tag)) {
+            return new ActivityCharacterDetailsBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for activity_list_heroes is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for activity_character_details is invalid. Received: " + tag);
         }
-        case  LAYOUT_ACTIVITYHEROESDETAILS: {
-          if ("layout/activity_heroes_details_0".equals(tag)) {
-            return new ActivityHeroesDetailsBindingImpl(component, view);
+        case  LAYOUT_ACTIVITYLISTCHARACTERS: {
+          if ("layout/activity_list_characters_0".equals(tag)) {
+            return new ActivityListCharactersBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for activity_heroes_details is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for activity_list_characters is invalid. Received: " + tag);
         }
         case  LAYOUT_ACTIVITYSPLASH: {
           if ("layout/activity_splash_0".equals(tag)) {
@@ -73,11 +73,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_splash is invalid. Received: " + tag);
         }
-        case  LAYOUT_ITEMHERO: {
-          if ("layout/item_hero_0".equals(tag)) {
-            return new ItemHeroBindingImpl(component, view);
+        case  LAYOUT_ITEMCHARACTER: {
+          if ("layout/item_character_0".equals(tag)) {
+            return new ItemCharacterBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for item_hero is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for item_character is invalid. Received: " + tag);
         }
         case  LAYOUT_ITEMPROGRESS: {
           if ("layout/item_progress_0".equals(tag)) {
@@ -149,10 +149,10 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(6);
 
     static {
-      sKeys.put("layout/activity_list_heroes_0", com.hero.code.R.layout.activity_list_heroes);
-      sKeys.put("layout/activity_heroes_details_0", com.hero.code.R.layout.activity_heroes_details);
+      sKeys.put("layout/activity_character_details_0", com.hero.code.R.layout.activity_character_details);
+      sKeys.put("layout/activity_list_characters_0", com.hero.code.R.layout.activity_list_characters);
       sKeys.put("layout/activity_splash_0", com.hero.code.R.layout.activity_splash);
-      sKeys.put("layout/item_hero_0", com.hero.code.R.layout.item_hero);
+      sKeys.put("layout/item_character_0", com.hero.code.R.layout.item_character);
       sKeys.put("layout/item_progress_0", com.hero.code.R.layout.item_progress);
       sKeys.put("layout/loading_placeholder_0", com.hero.code.R.layout.loading_placeholder);
     }

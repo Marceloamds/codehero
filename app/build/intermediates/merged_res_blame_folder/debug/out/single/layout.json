@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_progress.xml",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/item_progress.xml"
+    },
+    {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash.xml",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_character.xml",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/item_character.xml"
+    },
+    {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_character_details.xml",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/activity_character_details.xml"
+    },
+    {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_list_characters.xml",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/activity_list_characters.xml"
+    },
+    {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/loading_placeholder.xml",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/loading_placeholder.xml"
+    }
+]

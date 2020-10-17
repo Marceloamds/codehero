@@ -1,0 +1,40 @@
+com/hero/code/DataBindingTriggerClass.java
+ com.hero.code.DataBindingTriggerClass
+com/hero/code/databinding/ItemProgressBinding.java
+ com.hero.code.databinding.ItemProgressBinding
+com/hero/code/databinding/ItemProgressBindingImpl.java
+ com.hero.code.databinding.ItemProgressBindingImpl
+com/hero/code/databinding/ItemCharacterBinding.java
+ com.hero.code.databinding.ItemCharacterBinding
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+com/hero/code/databinding/ActivitySplashBindingImpl.java
+ com.hero.code.databinding.ActivitySplashBindingImpl
+com/hero/code/databinding/ActivitySplashBinding.java
+ com.hero.code.databinding.ActivitySplashBinding
+com/hero/code/databinding/LoadingPlaceholderBinding.java
+ com.hero.code.databinding.LoadingPlaceholderBinding
+com/hero/code/databinding/ActivityListCharactersBinding.java
+ com.hero.code.databinding.ActivityListCharactersBinding
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/hero/code/BR.java
+ com.hero.code.BR
+com/hero/code/databinding/ActivityListCharactersBindingImpl.java
+ com.hero.code.databinding.ActivityListCharactersBindingImpl
+com/hero/code/databinding/ActivityCharacterDetailsBindingImpl.java
+ com.hero.code.databinding.ActivityCharacterDetailsBindingImpl
+com/hero/code/databinding/LoadingPlaceholderBindingImpl.java
+ com.hero.code.databinding.LoadingPlaceholderBindingImpl
+com/hero/code/DataBinderMapperImpl.java
+ com.hero.code.DataBinderMapperImpl
+ com.hero.code.DataBinderMapperImpl$InnerBrLookup
+ com.hero.code.DataBinderMapperImpl$InnerLayoutIdLookup
+com/hero/code/databinding/ItemCharacterBindingImpl.java
+ com.hero.code.databinding.ItemCharacterBindingImpl
+com/hero/code/BuildConfig.java
+ com.hero.code.BuildConfig
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/hero/code/databinding/ActivityCharacterDetailsBinding.java
+ com.hero.code.databinding.ActivityCharacterDetailsBinding

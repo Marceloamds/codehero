@@ -1,6 +1,6 @@
 package com.hero.code.databinding;
 import com.hero.code.R;
-
+import com.hero.code.BR;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.view.View;

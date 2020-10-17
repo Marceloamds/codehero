@@ -15,7 +15,6 @@ class CodeHeroApplication : Application() {
                 listOf(
                     networkingModule(),
                     viewModelModule(),
-                    databaseModule(),
                     repositoryModule(),
                     interactorModule(),
                     resourceModule()

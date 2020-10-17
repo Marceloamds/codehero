@@ -1,4 +1,4 @@
-com.nyt.movies
+com.hero.code
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1652,14 +1652,12 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
-id action_filter
 id action_image
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_search
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1667,7 +1665,6 @@ id add
 id alertTitle
 id aligned
 id all
-id all_movies
 id always
 id animateToEnd
 id animateToStart
@@ -1690,6 +1687,7 @@ id button_go_back
 id button_go_to_review
 id button_share
 id button_try_again
+id cache_measures
 id cancel_button
 id center
 id center_horizontal
@@ -1710,8 +1708,8 @@ id clip_vertical
 id collapseActionView
 id confirm_button
 id constraintLayout
-id constraint_layout_movie_details
-id constraint_layout_movie_preview
+id constraint_layout_hero_details
+id constraint_layout_hero_preview
 id container
 id content
 id contentPanel
@@ -1727,6 +1725,7 @@ id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
 id deltaRelative
+id dependency_ordering
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1761,7 +1760,6 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
-id filter_favorite
 id fitToContents
 id fixed
 id flip
@@ -1775,6 +1773,7 @@ id gone
 id graph
 id graph_wrap
 id group_divider
+id grouping
 id groups
 id guideline
 id guideline_vertical
@@ -1789,7 +1788,7 @@ id ignore
 id ignoreRequest
 id image
 id image_view_empty_list
-id image_view_movie_poster
+id image_view_hero_poster
 id info
 id invisible
 id italic
@@ -1816,7 +1815,6 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
-id motion_layout
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
 id mtrl_calendar_frame
@@ -1873,7 +1871,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recycler_view_movies
+id recycler_view_heroes
 id reverseSawtooth
 id right
 id right_icon
@@ -1956,10 +1954,10 @@ id textStart
 id textWatcher
 id text_input_end_icon
 id text_input_start_icon
+id text_view_character_review
+id text_view_character_title
 id text_view_empty_message
-id text_view_movie_review
-id text_view_movie_title
-id text_view_movie_title_end
+id text_view_hero_title
 id text_view_opening_date
 id text_view_publication
 id text_view_review_hint
@@ -2061,8 +2059,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_list_movies
-layout activity_movies_details
+layout activity_character_details
+layout activity_list_characters
 layout activity_splash
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2080,7 +2078,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout item_movie
+layout item_character
 layout item_progress
 layout loading_placeholder
 layout mtrl_alert_dialog
@@ -2135,7 +2133,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-menu list_movies_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -2241,8 +2238,8 @@ string search_for_reviews
 string search_menu_title
 string send_review_to
 string share_review_text
-string show_all_movies
-string show_favorite_movies
+string show_all_heroes
+string show_favorite_heroes
 string status_bar_notification_info_overflow
 string synopsis_label
 style AlertDialog_AppCompat
@@ -3072,8 +3069,6 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
-xml activity_movies_details_xml_constraintlayout_scene
-xml motion_scene_movie
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

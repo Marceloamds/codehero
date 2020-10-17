@@ -9,10 +9,7 @@ import android.content.Intent
 import android.net.Uri
 import android.webkit.URLUtil
 import com.hero.code.R
-import com.hero.code.domain.entity.hero.Hero
 import com.hero.code.presentation.util.dialog.DialogData
-
-private const val INTENT_TEXT_TYPE = "text/plain"
 
 fun Context.showDialog(dialogData: DialogData): Dialog {
     val builder = AlertDialog.Builder(this)
@@ -59,13 +56,4 @@ fun Context.openBrowser(url: String) {
         Uri.parse(formattedUrl)
     ).apply { addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) }
     startActivity(browserIntent)
-}
-
-fun Activity.shareHero(hero: Hero) {
-    val shareIntent = Intent().apply {
-        action = Intent.ACTION_SEND
-        putExtra(Intent.EXTRA_TEXT, getString(R.string.share_review_text, hero.link.url))
-        type = INTENT_TEXT_TYPE
-    }
-    startActivity(Intent.createChooser(shareIntent, getString(R.string.send_review_to)))
 }
