@@ -9,6 +9,7 @@ import androidx.databinding.ViewDataBinding;
 import com.hero.code.databinding.ActivityCharacterDetailsBindingImpl;
 import com.hero.code.databinding.ActivityListCharactersBindingImpl;
 import com.hero.code.databinding.ActivitySplashBindingImpl;
+import com.hero.code.databinding.FragmentShowCharacterBindingImpl;
 import com.hero.code.databinding.ItemCharacterBindingImpl;
 import com.hero.code.databinding.ItemProgressBindingImpl;
 import com.hero.code.databinding.LoadingPlaceholderBindingImpl;
@@ -29,18 +30,21 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYSPLASH = 3;
 
-  private static final int LAYOUT_ITEMCHARACTER = 4;
+  private static final int LAYOUT_FRAGMENTSHOWCHARACTER = 4;
 
-  private static final int LAYOUT_ITEMPROGRESS = 5;
+  private static final int LAYOUT_ITEMCHARACTER = 5;
 
-  private static final int LAYOUT_LOADINGPLACEHOLDER = 6;
+  private static final int LAYOUT_ITEMPROGRESS = 6;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(6);
+  private static final int LAYOUT_LOADINGPLACEHOLDER = 7;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(7);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.activity_character_details, LAYOUT_ACTIVITYCHARACTERDETAILS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.activity_list_characters, LAYOUT_ACTIVITYLISTCHARACTERS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.fragment_show_character, LAYOUT_FRAGMENTSHOWCHARACTER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.item_character, LAYOUT_ITEMCHARACTER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.item_progress, LAYOUT_ITEMPROGRESS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.loading_placeholder, LAYOUT_LOADINGPLACEHOLDER);
@@ -72,6 +76,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivitySplashBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_splash is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTSHOWCHARACTER: {
+          if ("layout/fragment_show_character_0".equals(tag)) {
+            return new FragmentShowCharacterBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_show_character is invalid. Received: " + tag);
         }
         case  LAYOUT_ITEMCHARACTER: {
           if ("layout/item_character_0".equals(tag)) {
@@ -136,22 +146,24 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(3);
+    static final SparseArray<String> sKeys = new SparseArray<String>(4);
 
     static {
       sKeys.put(0, "_all");
-      sKeys.put(1, "progressVisible");
-      sKeys.put(2, "visible");
+      sKeys.put(1, "character");
+      sKeys.put(2, "progressVisible");
+      sKeys.put(3, "visible");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(6);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(7);
 
     static {
       sKeys.put("layout/activity_character_details_0", com.hero.code.R.layout.activity_character_details);
       sKeys.put("layout/activity_list_characters_0", com.hero.code.R.layout.activity_list_characters);
       sKeys.put("layout/activity_splash_0", com.hero.code.R.layout.activity_splash);
+      sKeys.put("layout/fragment_show_character_0", com.hero.code.R.layout.fragment_show_character);
       sKeys.put("layout/item_character_0", com.hero.code.R.layout.item_character);
       sKeys.put("layout/item_progress_0", com.hero.code.R.layout.item_progress);
       sKeys.put("layout/loading_placeholder_0", com.hero.code.R.layout.loading_placeholder);

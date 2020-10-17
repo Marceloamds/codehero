@@ -12,7 +12,10 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.hero.code.R;
 import com.hero.code.presentation.util.placeholder.PlaceholderView;
 import java.lang.Deprecated;
@@ -20,7 +23,16 @@ import java.lang.Object;
 
 public abstract class ActivityListCharactersBinding extends ViewDataBinding {
   @NonNull
+  public final ImageView buttonNextPage;
+
+  @NonNull
+  public final ImageView buttonPreviousPage;
+
+  @NonNull
   public final Button buttonTryAgain;
+
+  @NonNull
+  public final ViewPager2 characterViewPager;
 
   @NonNull
   public final ConstraintLayout emptyListLayout;
@@ -32,22 +44,48 @@ public abstract class ActivityListCharactersBinding extends ViewDataBinding {
   public final PlaceholderView placeholderView;
 
   @NonNull
-  public final RecyclerView recyclerViewHeroes;
+  public final TextInputEditText textCharacterNameEditText;
+
+  @NonNull
+  public final TextInputLayout textCharacterNameInputLayout;
+
+  @NonNull
+  public final TextView textCharacterNameLabel;
+
+  @NonNull
+  public final TextView textListCharactersTitle;
 
   @NonNull
   public final TextView textViewEmptyMessage;
 
+  @NonNull
+  public final TabLayout viewPagerIndicator;
+
+  @NonNull
+  public final TextView viewPagerLabel;
+
   protected ActivityListCharactersBinding(Object _bindingComponent, View _root,
-      int _localFieldCount, Button buttonTryAgain, ConstraintLayout emptyListLayout,
+      int _localFieldCount, ImageView buttonNextPage, ImageView buttonPreviousPage,
+      Button buttonTryAgain, ViewPager2 characterViewPager, ConstraintLayout emptyListLayout,
       ImageView imageViewEmptyList, PlaceholderView placeholderView,
-      RecyclerView recyclerViewHeroes, TextView textViewEmptyMessage) {
+      TextInputEditText textCharacterNameEditText, TextInputLayout textCharacterNameInputLayout,
+      TextView textCharacterNameLabel, TextView textListCharactersTitle,
+      TextView textViewEmptyMessage, TabLayout viewPagerIndicator, TextView viewPagerLabel) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.buttonNextPage = buttonNextPage;
+    this.buttonPreviousPage = buttonPreviousPage;
     this.buttonTryAgain = buttonTryAgain;
+    this.characterViewPager = characterViewPager;
     this.emptyListLayout = emptyListLayout;
     this.imageViewEmptyList = imageViewEmptyList;
     this.placeholderView = placeholderView;
-    this.recyclerViewHeroes = recyclerViewHeroes;
+    this.textCharacterNameEditText = textCharacterNameEditText;
+    this.textCharacterNameInputLayout = textCharacterNameInputLayout;
+    this.textCharacterNameLabel = textCharacterNameLabel;
+    this.textListCharactersTitle = textListCharactersTitle;
     this.textViewEmptyMessage = textViewEmptyMessage;
+    this.viewPagerIndicator = viewPagerIndicator;
+    this.viewPagerLabel = viewPagerLabel;
   }
 
   @NonNull

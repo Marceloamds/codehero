@@ -7,7 +7,11 @@ class ApiClient constructor(
     private val apiService: ApiService
 ) : RequestHandler() {
 
-    suspend fun getCharactersList(offset: Int): ApiCharacterResponse? {
-        return makeRequest(apiService.getCharacterList(offset))
+    suspend fun getCharactersList(offset: Int, limit: Int): ApiCharacterResponse? {
+        return makeRequest(apiService.getCharacterList(offset, limit))
+    }
+
+    suspend fun getCharactersListTotal(): ApiCharacterResponse? {
+        return makeRequest(apiService.getCharactersListTotal())
     }
 }

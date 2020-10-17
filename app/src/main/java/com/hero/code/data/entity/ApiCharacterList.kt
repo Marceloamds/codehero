@@ -8,4 +8,4 @@ data class ApiCharacterList(
     @SerializedName("total") val total: Int?,
     @SerializedName("count") val count: Int?,
     @SerializedName("results") val results: List<ApiCharacter?>,
-    )
+)

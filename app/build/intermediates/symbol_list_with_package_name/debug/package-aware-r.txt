@@ -1542,6 +1542,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_background
+drawable default_pager_tab
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1549,6 +1550,8 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_arrow_back
+drawable ic_arrow_left
+drawable ic_arrow_right
 drawable ic_empty_list
 drawable ic_favorite
 drawable ic_favorite_border
@@ -1590,7 +1593,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pager_tab_selector
 drawable placeholder
+drawable selected_pager_tab
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1685,6 +1690,8 @@ id buttonPanel
 id button_favorite
 id button_go_back
 id button_go_to_review
+id button_next_page
+id button_previous_page
 id button_share
 id button_try_again
 id cache_measures
@@ -1694,6 +1701,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id character_view_pager
 id checkbox
 id checked
 id chip
@@ -1760,11 +1768,15 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id first_character
+id first_divider
 id fitToContents
 id fixed
 id flip
 id floating
 id forever
+id fourth_character
+id fourth_divider
 id fragment_container_view_tag
 id ghost_view
 id ghost_view_holder
@@ -1871,7 +1883,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recycler_view_heroes
 id reverseSawtooth
 id right
 id right_icon
@@ -1898,6 +1909,8 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id second_character
+id second_divider
 id select_dialog_listview
 id selected
 id shortcut
@@ -1953,8 +1966,12 @@ id textSpacerNoTitle
 id textStart
 id textWatcher
 id text_character_name
+id text_character_name_edit_text
+id text_character_name_input_layout
+id text_character_name_label
 id text_input_end_icon
 id text_input_start_icon
+id text_list_characters_title
 id text_view_empty_message
 id text_view_hero_title
 id text_view_opening_date
@@ -1969,6 +1986,8 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id third_character
+id third_divider
 id time
 id title
 id titleDividerNoCustom
@@ -1991,6 +2010,8 @@ id unlabeled
 id up
 id useLogo
 id view_offset_helper
+id view_pager_indicator
+id view_pager_label
 id visible
 id visible_removing_fragment_view_tag
 id withText
@@ -2077,6 +2098,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_show_character
 layout item_character
 layout item_progress
 layout loading_placeholder
@@ -2468,7 +2490,6 @@ style Base_Widget_MaterialComponents_Slider
 style Base_Widget_MaterialComponents_TextInputEditText
 style Base_Widget_MaterialComponents_TextInputLayout
 style Base_Widget_MaterialComponents_TextView
-style BottomRoundedImageView
 style CardView
 style CardView_Dark
 style CardView_Light
@@ -2497,7 +2518,6 @@ style Platform_V21_AppCompat_Light
 style Platform_V25_AppCompat
 style Platform_V25_AppCompat_Light
 style Platform_Widget_AppCompat_Spinner
-style RoundedImageView
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem
 style RtlOverlay_Widget_AppCompat_DialogTitle_Icon
@@ -2536,6 +2556,7 @@ style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year
 style ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox
 style ShapeAppearanceOverlay_TopLeftCut
 style ShapeAppearanceOverlay_TopRightDifferentCornerSize
+style TabTextAppearance
 style Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style Test_Theme_MaterialComponents_MaterialCalendar
 style Test_Widget_MaterialComponents_MaterialCalendar

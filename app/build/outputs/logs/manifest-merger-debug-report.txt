@@ -126,22 +126,22 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:24:17-77
 	android:name
 		ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:24:27-74
-activity#com.hero.code.presentation.view.heroes.details.CharacterDetailsActivity
+activity#com.hero.code.presentation.view.character.details.CharacterDetailsActivity
 ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:28:9-31:59
 	android:configChanges
 		ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:30:13-74
 	android:theme
 		ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:31:13-56
 	android:name
-		ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:29:13-99
-activity#com.hero.code.presentation.view.heroes.list.ListCharacterActivity
-ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:33:9-36:47
+		ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:29:13-102
+activity#com.hero.code.presentation.view.character.list.ListCharactersActivity
+ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:33:9-36:59
 	android:configChanges
 		ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:35:13-74
 	android:theme
-		ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:36:13-44
+		ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:36:13-56
 	android:name
-		ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:34:13-93
+		ADDED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:34:13-97
 uses-sdk
 INJECTED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml

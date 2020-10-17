@@ -14,12 +14,20 @@ public class ActivityListCharactersBindingImpl extends ActivityListCharactersBin
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.recycler_view_heroes, 1);
-        sViewsWithIds.put(R.id.empty_list_layout, 2);
-        sViewsWithIds.put(R.id.image_view_empty_list, 3);
-        sViewsWithIds.put(R.id.text_view_empty_message, 4);
-        sViewsWithIds.put(R.id.button_try_again, 5);
-        sViewsWithIds.put(R.id.placeholder_view, 6);
+        sViewsWithIds.put(R.id.text_list_characters_title, 1);
+        sViewsWithIds.put(R.id.text_character_name_label, 2);
+        sViewsWithIds.put(R.id.text_character_name_input_layout, 3);
+        sViewsWithIds.put(R.id.text_character_name_edit_text, 4);
+        sViewsWithIds.put(R.id.view_pager_label, 5);
+        sViewsWithIds.put(R.id.character_view_pager, 6);
+        sViewsWithIds.put(R.id.button_previous_page, 7);
+        sViewsWithIds.put(R.id.button_next_page, 8);
+        sViewsWithIds.put(R.id.view_pager_indicator, 9);
+        sViewsWithIds.put(R.id.empty_list_layout, 10);
+        sViewsWithIds.put(R.id.image_view_empty_list, 11);
+        sViewsWithIds.put(R.id.text_view_empty_message, 12);
+        sViewsWithIds.put(R.id.button_try_again, 13);
+        sViewsWithIds.put(R.id.placeholder_view, 14);
     }
     // views
     @NonNull
@@ -30,16 +38,24 @@ public class ActivityListCharactersBindingImpl extends ActivityListCharactersBin
     // Inverse Binding Event Handlers
 
     public ActivityListCharactersBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 15, sIncludes, sViewsWithIds));
     }
     private ActivityListCharactersBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.Button) bindings[5]
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[2]
-            , (android.widget.ImageView) bindings[3]
-            , (com.hero.code.presentation.util.placeholder.PlaceholderView) bindings[6]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[1]
-            , (android.widget.TextView) bindings[4]
+            , (android.widget.ImageView) bindings[8]
+            , (android.widget.ImageView) bindings[7]
+            , (android.widget.Button) bindings[13]
+            , (androidx.viewpager2.widget.ViewPager2) bindings[6]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[10]
+            , (android.widget.ImageView) bindings[11]
+            , (com.hero.code.presentation.util.placeholder.PlaceholderView) bindings[14]
+            , (com.google.android.material.textfield.TextInputEditText) bindings[4]
+            , (com.google.android.material.textfield.TextInputLayout) bindings[3]
+            , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[1]
+            , (android.widget.TextView) bindings[12]
+            , (com.google.android.material.tabs.TabLayout) bindings[9]
+            , (android.widget.TextView) bindings[5]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

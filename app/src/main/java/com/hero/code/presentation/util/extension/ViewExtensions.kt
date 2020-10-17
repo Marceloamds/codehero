@@ -6,8 +6,6 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.ImageView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
-import com.hero.code.R
 import com.hero.code.presentation.util.click.SafeClickListener
 
 fun View.setSafeClickListener(intervalInMillis: Int = 1000, callback: () -> Unit) {
@@ -36,9 +34,5 @@ fun setWindowFlag(bits: Int, on: Boolean, window: Window) {
 }
 
 fun ImageView.load(url: String?) {
-    val requestOptions = RequestOptions().apply {
-        placeholder(R.drawable.placeholder)
-
-    }
-    Glide.with(this).load(url).circleCrop().apply(requestOptions).into(this)
+    Glide.with(this).load(url).circleCrop().into(this)
 }

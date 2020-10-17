@@ -1,4 +1,4 @@
-#Fri Oct 16 22:27:05 AMT 2020
+#Sat Oct 17 18:13:00 AMT 2020
 base.0=/home/marcelo/Documentos/CodeHero/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

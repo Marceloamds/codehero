@@ -9,9 +9,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.hero.code.R;
+import com.hero.code.domain.entity.character.Character;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -25,6 +27,9 @@ public abstract class ItemCharacterBinding extends ViewDataBinding {
   @NonNull
   public final TextView textCharacterName;
 
+  @Bindable
+  protected Character mCharacter;
+
   protected ItemCharacterBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ConstraintLayout constraintLayoutHeroPreview, ImageView imageCharacter,
       TextView textCharacterName) {
@@ -32,6 +37,13 @@ public abstract class ItemCharacterBinding extends ViewDataBinding {
     this.constraintLayoutHeroPreview = constraintLayoutHeroPreview;
     this.imageCharacter = imageCharacter;
     this.textCharacterName = textCharacterName;
+  }
+
+  public abstract void setCharacter(@Nullable Character character);
+
+  @Nullable
+  public Character getCharacter() {
+    return mCharacter;
   }
 
   @NonNull

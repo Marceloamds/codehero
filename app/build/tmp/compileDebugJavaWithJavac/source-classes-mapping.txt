@@ -1,5 +1,7 @@
 com/hero/code/DataBindingTriggerClass.java
  com.hero.code.DataBindingTriggerClass
+com/hero/code/databinding/FragmentShowCharacterBinding.java
+ com.hero.code.databinding.FragmentShowCharacterBinding
 com/hero/code/databinding/ItemProgressBinding.java
  com.hero.code.databinding.ItemProgressBinding
 com/hero/code/databinding/ItemProgressBindingImpl.java
@@ -12,6 +14,8 @@ com/hero/code/databinding/ActivitySplashBindingImpl.java
  com.hero.code.databinding.ActivitySplashBindingImpl
 com/hero/code/databinding/ActivitySplashBinding.java
  com.hero.code.databinding.ActivitySplashBinding
+com/hero/code/databinding/FragmentShowCharacterBindingImpl.java
+ com.hero.code.databinding.FragmentShowCharacterBindingImpl
 com/hero/code/databinding/LoadingPlaceholderBinding.java
  com.hero.code.databinding.LoadingPlaceholderBinding
 com/hero/code/databinding/ActivityListCharactersBinding.java

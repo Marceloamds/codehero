@@ -58,20 +58,20 @@
 35        </activity>
 36        <activity
 36-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:28:9-31:59
-37            android:name="com.hero.code.presentation.view.heroes.details.CharacterDetailsActivity"
-37-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:29:13-99
+37            android:name="com.hero.code.presentation.view.character.details.CharacterDetailsActivity"
+37-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:29:13-102
 38            android:configChanges="keyboardHidden|orientation|screenSize"
 38-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:30:13-74
 39            android:theme="@style/AppTheme.NoActionbar" />
 39-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:31:13-56
 40        <activity
-40-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:33:9-36:47
-41            android:name="com.hero.code.presentation.view.heroes.list.ListCharacterActivity"
-41-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:34:13-93
+40-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:33:9-36:59
+41            android:name="com.hero.code.presentation.view.character.list.ListCharactersActivity"
+41-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:34:13-97
 42            android:configChanges="keyboardHidden|orientation|screenSize"
 42-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:35:13-74
-43            android:theme="@style/AppTheme" />
-43-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:36:13-44
+43            android:theme="@style/AppTheme.NoActionbar" />
+43-->/home/marcelo/Documentos/CodeHero/app/src/main/AndroidManifest.xml:36:13-56
 44
 45        <provider
 45-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/marcelo/.gradle/caches/transforms-2/files-2.1/655ea1ea7815761ad3eb24b5a42949f9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43

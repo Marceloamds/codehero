@@ -1,7 +1,7 @@
 package com.hero.code.presentation.view.splash
 
 import com.hero.code.presentation.util.base.BaseViewModel
-import com.hero.code.presentation.view.heroes.list.ListCharactersNavData
+import com.hero.code.presentation.view.character.list.ListCharactersNavData
 import kotlinx.coroutines.delay
 
 class SplashViewModel : BaseViewModel() {
