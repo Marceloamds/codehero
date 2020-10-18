@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.hero.code.R;
+import com.hero.code.presentation.util.placeholder.PlaceholderView;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -26,6 +27,9 @@ public abstract class FragmentShowCharacterBinding extends ViewDataBinding {
   public final View fourthDivider;
 
   @NonNull
+  public final PlaceholderView placeholderView;
+
+  @NonNull
   public final ItemCharacterBinding secondCharacter;
 
   @NonNull
@@ -39,13 +43,14 @@ public abstract class FragmentShowCharacterBinding extends ViewDataBinding {
 
   protected FragmentShowCharacterBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ItemCharacterBinding firstCharacter, View firstDivider, ItemCharacterBinding fourthCharacter,
-      View fourthDivider, ItemCharacterBinding secondCharacter, View secondDivider,
-      ItemCharacterBinding thirdCharacter, View thirdDivider) {
+      View fourthDivider, PlaceholderView placeholderView, ItemCharacterBinding secondCharacter,
+      View secondDivider, ItemCharacterBinding thirdCharacter, View thirdDivider) {
     super(_bindingComponent, _root, _localFieldCount);
     this.firstCharacter = firstCharacter;
     this.firstDivider = firstDivider;
     this.fourthCharacter = fourthCharacter;
     this.fourthDivider = fourthDivider;
+    this.placeholderView = placeholderView;
     this.secondCharacter = secondCharacter;
     this.secondDivider = secondDivider;
     this.thirdCharacter = thirdCharacter;

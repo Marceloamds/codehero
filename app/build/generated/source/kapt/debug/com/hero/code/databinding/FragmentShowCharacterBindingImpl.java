@@ -12,7 +12,7 @@ public class FragmentShowCharacterBindingImpl extends FragmentShowCharacterBindi
     @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
-        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(9);
+        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(10);
         sIncludes.setIncludes(0, 
             new String[] {"item_character", "item_character", "item_character", "item_character"},
             new int[] {1, 2, 3, 4},
@@ -25,6 +25,7 @@ public class FragmentShowCharacterBindingImpl extends FragmentShowCharacterBindi
         sViewsWithIds.put(R.id.second_divider, 6);
         sViewsWithIds.put(R.id.third_divider, 7);
         sViewsWithIds.put(R.id.fourth_divider, 8);
+        sViewsWithIds.put(R.id.placeholder_view, 9);
     }
     // views
     @NonNull
@@ -35,7 +36,7 @@ public class FragmentShowCharacterBindingImpl extends FragmentShowCharacterBindi
     // Inverse Binding Event Handlers
 
     public FragmentShowCharacterBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private FragmentShowCharacterBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 4
@@ -43,6 +44,7 @@ public class FragmentShowCharacterBindingImpl extends FragmentShowCharacterBindi
             , (android.view.View) bindings[5]
             , (com.hero.code.databinding.ItemCharacterBinding) bindings[4]
             , (android.view.View) bindings[8]
+            , (com.hero.code.presentation.util.placeholder.PlaceholderView) bindings[9]
             , (com.hero.code.databinding.ItemCharacterBinding) bindings[2]
             , (android.view.View) bindings[6]
             , (com.hero.code.databinding.ItemCharacterBinding) bindings[3]

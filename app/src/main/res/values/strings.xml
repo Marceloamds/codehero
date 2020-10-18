@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NYT Heroes</string>
+    <string name="app_name">Code Hero</string>
     <!--Global Strings-->
     <string name="global_try_again">Try Again</string>
     <string name="global_ok">OK</string>
@@ -10,16 +10,13 @@
     <string name="error_title">Oops!</string>
     <string name="error_unauthorized">Could not complete operation. You ate not authorized</string>
     <string name="error_too_many_requests">Requests limit reached. Please try again later</string>
-    <!--List Heroes-->
-    <string name="search_for_reviews">Search for reviews</string>
-    <string name="action_search">Search</string>
-    <string name="action_filter">Filter</string>
-    <string name="show_favorite_heroes">Show favorite heroes</string>
-    <string name="show_all_heroes">Show all heroes</string>
-    <string name="send_review_to">Send review to</string>
-    <string name="share_review_text">Check out this awesome review!\n\n%s</string>
+    <!--List Characters-->
+    <string name="activity_list_characters_name">Nome</string>
+    <string name="activity_list_characters_search_label">Nome do Personagem</string>
+    <string name="activity_list_characters_title">TESTE FRONT END</string>
+    <string name="activity_list_characters_headline">BUSCA MARVEL</string>
     <string name="empty_list_helper_text">Could not find any reviews for this search :(\n\nCheck out your internet connection or try again with another search!</string>
-    <!--Hero Details-->
+    <!--Character Details-->
     <string name="synopsis_label">Synopsis</string>
     <string name="review_publication_template">by %s - %s</string>
     <string name="go_to_review">Go to review</string>

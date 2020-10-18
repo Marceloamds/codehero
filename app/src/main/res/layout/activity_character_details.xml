@@ -14,7 +14,7 @@
             android:background="@color/colorWhite">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/image_view_hero_poster"
+                android:id="@+id/image_view_character_poster"
                 android:layout_width="0dp"
                 android:layout_height="250dp"
                 android:src="@drawable/placeholder"
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
                 android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="@id/image_view_hero_poster"
+                app:layout_constraintBottom_toBottomOf="@id/image_view_character_poster"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 

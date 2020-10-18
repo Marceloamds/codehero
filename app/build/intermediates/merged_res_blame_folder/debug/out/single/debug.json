@@ -28,10 +28,6 @@
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable_ic_movie.xml.flat",
-        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable/ic_movie.xml"
-    },
-    {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable_rounded_border_background.xml.flat",
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable/rounded_border_background.xml"
     },
@@ -56,6 +52,10 @@
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable/pager_tab_selector.xml"
     },
     {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable_ic_iron_man.xml.flat",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable/ic_iron_man.xml"
+    },
+    {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable-hdpi_placeholder.png.flat",
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable-hdpi/placeholder.png"
     },
@@ -76,12 +76,20 @@
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/font_roboto_regular.ttf.flat",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/font/roboto_regular.ttf"
+    },
+    {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable_ic_share.xml.flat",
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable/ic_share.xml"
     },
     {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable_ic_arrow_right.xml.flat",
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable/ic_arrow_right.xml"
+    },
+    {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/font_roboto_black.ttf.flat",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/font/roboto_black.ttf"
     },
     {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/layout_activity_list_characters.xml.flat",
@@ -98,6 +106,10 @@
     {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/drawable-xxhdpi_movie_rounded_background_32.xml.flat",
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/drawable-xxhdpi/movie_rounded_background_32.xml"
+    },
+    {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/font_roboto_light.ttf.flat",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/font/roboto_light.ttf"
     },
     {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",

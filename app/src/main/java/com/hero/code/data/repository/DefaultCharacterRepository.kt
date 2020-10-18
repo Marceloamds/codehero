@@ -13,13 +13,15 @@ class DefaultCharacterRepository constructor(
         return apiClient.getCharactersList(
             offset = page * CHARACTERS_PER_PAGE,
             limit = CHARACTERS_PER_PAGE,
-            if (query.isEmpty()) null else query
+            query.nullIfEmpty()
         )?.data?.results?.map { it?.toDomainObject() }
     }
 
     override suspend fun getCharacterListTotal(query: String): Int? {
         return apiClient.getCharactersListTotal(
-            if (query.isEmpty()) null else query
+            query.nullIfEmpty()
         )?.data?.total
     }
+
+    private fun String.nullIfEmpty() = if(isEmpty()) null else this
 }

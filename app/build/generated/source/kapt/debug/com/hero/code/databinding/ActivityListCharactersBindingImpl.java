@@ -14,19 +14,21 @@ public class ActivityListCharactersBindingImpl extends ActivityListCharactersBin
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.text_list_characters_title, 1);
-        sViewsWithIds.put(R.id.text_character_name_label, 2);
-        sViewsWithIds.put(R.id.search_view_character, 3);
-        sViewsWithIds.put(R.id.view_pager_label, 4);
-        sViewsWithIds.put(R.id.character_view_pager, 5);
-        sViewsWithIds.put(R.id.button_previous_page, 6);
-        sViewsWithIds.put(R.id.button_next_page, 7);
-        sViewsWithIds.put(R.id.view_pager_indicator, 8);
-        sViewsWithIds.put(R.id.empty_list_layout, 9);
-        sViewsWithIds.put(R.id.image_view_empty_list, 10);
-        sViewsWithIds.put(R.id.text_view_empty_message, 11);
-        sViewsWithIds.put(R.id.button_try_again, 12);
-        sViewsWithIds.put(R.id.placeholder_view, 13);
+        sViewsWithIds.put(R.id.text_list_characters_headline, 1);
+        sViewsWithIds.put(R.id.text_list_characters_title, 2);
+        sViewsWithIds.put(R.id.view_headline_underline, 3);
+        sViewsWithIds.put(R.id.text_character_name_label, 4);
+        sViewsWithIds.put(R.id.search_view_character, 5);
+        sViewsWithIds.put(R.id.view_pager_label, 6);
+        sViewsWithIds.put(R.id.character_view_pager, 7);
+        sViewsWithIds.put(R.id.button_previous_page, 8);
+        sViewsWithIds.put(R.id.button_next_page, 9);
+        sViewsWithIds.put(R.id.view_pager_indicator, 10);
+        sViewsWithIds.put(R.id.empty_list_layout, 11);
+        sViewsWithIds.put(R.id.image_view_empty_list, 12);
+        sViewsWithIds.put(R.id.text_view_empty_message, 13);
+        sViewsWithIds.put(R.id.button_try_again, 14);
+        sViewsWithIds.put(R.id.placeholder_view, 15);
     }
     // views
     @NonNull
@@ -37,23 +39,25 @@ public class ActivityListCharactersBindingImpl extends ActivityListCharactersBin
     // Inverse Binding Event Handlers
 
     public ActivityListCharactersBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 16, sIncludes, sViewsWithIds));
     }
     private ActivityListCharactersBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.ImageView) bindings[7]
-            , (android.widget.ImageView) bindings[6]
-            , (android.widget.Button) bindings[12]
-            , (androidx.viewpager2.widget.ViewPager2) bindings[5]
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[9]
-            , (android.widget.ImageView) bindings[10]
-            , (com.hero.code.presentation.util.placeholder.PlaceholderView) bindings[13]
-            , (androidx.appcompat.widget.SearchView) bindings[3]
-            , (android.widget.TextView) bindings[2]
-            , (android.widget.TextView) bindings[1]
-            , (android.widget.TextView) bindings[11]
-            , (com.google.android.material.tabs.TabLayout) bindings[8]
+            , (android.widget.ImageView) bindings[9]
+            , (android.widget.ImageView) bindings[8]
+            , (android.widget.Button) bindings[14]
+            , (androidx.viewpager2.widget.ViewPager2) bindings[7]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[11]
+            , (android.widget.ImageView) bindings[12]
+            , (com.hero.code.presentation.util.placeholder.PlaceholderView) bindings[15]
+            , (androidx.appcompat.widget.SearchView) bindings[5]
             , (android.widget.TextView) bindings[4]
+            , (android.widget.TextView) bindings[1]
+            , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[13]
+            , (android.view.View) bindings[3]
+            , (com.google.android.material.tabs.TabLayout) bindings[10]
+            , (android.widget.TextView) bindings[6]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

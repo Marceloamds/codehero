@@ -12,6 +12,7 @@
             layout="@layout/item_character"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginVertical="4dp"
             app:layout_constraintBottom_toBottomOf="@id/first_divider"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,6 +21,7 @@
             layout="@layout/item_character"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginVertical="4dp"
             app:layout_constraintBottom_toTopOf="@id/second_divider"
             app:layout_constraintTop_toBottomOf="@id/first_divider"
             app:layout_constraintVertical_bias="0.0"
@@ -30,6 +32,7 @@
             layout="@layout/item_character"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginVertical="4dp"
             app:layout_constraintBottom_toTopOf="@id/third_divider"
             app:layout_constraintTop_toBottomOf="@id/second_divider" />
 
@@ -38,6 +41,7 @@
             layout="@layout/item_character"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginVertical="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/third_divider" />
 
@@ -82,5 +86,10 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <com.hero.code.presentation.util.placeholder.PlaceholderView
+            android:id="@+id/placeholder_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

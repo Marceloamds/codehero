@@ -1554,8 +1554,8 @@ drawable ic_arrow_right
 drawable ic_empty_list
 drawable ic_favorite
 drawable ic_favorite_border
+drawable ic_iron_man
 drawable ic_launcher_foreground
-drawable ic_movie
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1599,6 +1599,9 @@ drawable selected_pager_tab
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font roboto_black
+font roboto_light
+font roboto_regular
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1970,6 +1973,7 @@ id text_character_name
 id text_character_name_label
 id text_input_end_icon
 id text_input_start_icon
+id text_list_characters_headline
 id text_list_characters_title
 id text_view_empty_message
 id text_view_hero_title
@@ -2008,6 +2012,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id view_headline_underline
 id view_offset_helper
 id view_pager_indicator
 id view_pager_label
@@ -2183,8 +2188,10 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string action_filter
-string action_search
+string activity_list_characters_headline
+string activity_list_characters_name
+string activity_list_characters_search_label
+string activity_list_characters_title
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2254,12 +2261,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string review_label
 string review_publication_template
-string search_for_reviews
 string search_menu_title
-string send_review_to
-string share_review_text
-string show_all_heroes
-string show_favorite_heroes
 string status_bar_notification_info_overflow
 string synopsis_label
 style AlertDialog_AppCompat

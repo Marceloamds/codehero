@@ -35,6 +35,7 @@ class ShowCharacterFragment : Fragment() {
 
     private fun subscribeUi() {
         _viewModel.charactersList.observe(viewLifecycleOwner, ::onCharactersReceived)
+        _viewModel.placeholder.observe(viewLifecycleOwner) { binding.placeholderView.setPlaceholder(it) }
         _viewModel.goTo.observe(viewLifecycleOwner, ::onGoTo)
     }
 

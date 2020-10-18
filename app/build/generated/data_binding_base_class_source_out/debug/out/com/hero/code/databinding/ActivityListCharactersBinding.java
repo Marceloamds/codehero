@@ -49,10 +49,16 @@ public abstract class ActivityListCharactersBinding extends ViewDataBinding {
   public final TextView textCharacterNameLabel;
 
   @NonNull
+  public final TextView textListCharactersHeadline;
+
+  @NonNull
   public final TextView textListCharactersTitle;
 
   @NonNull
   public final TextView textViewEmptyMessage;
+
+  @NonNull
+  public final View viewHeadlineUnderline;
 
   @NonNull
   public final TabLayout viewPagerIndicator;
@@ -64,8 +70,9 @@ public abstract class ActivityListCharactersBinding extends ViewDataBinding {
       int _localFieldCount, ImageView buttonNextPage, ImageView buttonPreviousPage,
       Button buttonTryAgain, ViewPager2 characterViewPager, ConstraintLayout emptyListLayout,
       ImageView imageViewEmptyList, PlaceholderView placeholderView, SearchView searchViewCharacter,
-      TextView textCharacterNameLabel, TextView textListCharactersTitle,
-      TextView textViewEmptyMessage, TabLayout viewPagerIndicator, TextView viewPagerLabel) {
+      TextView textCharacterNameLabel, TextView textListCharactersHeadline,
+      TextView textListCharactersTitle, TextView textViewEmptyMessage, View viewHeadlineUnderline,
+      TabLayout viewPagerIndicator, TextView viewPagerLabel) {
     super(_bindingComponent, _root, _localFieldCount);
     this.buttonNextPage = buttonNextPage;
     this.buttonPreviousPage = buttonPreviousPage;
@@ -76,8 +83,10 @@ public abstract class ActivityListCharactersBinding extends ViewDataBinding {
     this.placeholderView = placeholderView;
     this.searchViewCharacter = searchViewCharacter;
     this.textCharacterNameLabel = textCharacterNameLabel;
+    this.textListCharactersHeadline = textListCharactersHeadline;
     this.textListCharactersTitle = textListCharactersTitle;
     this.textViewEmptyMessage = textViewEmptyMessage;
+    this.viewHeadlineUnderline = viewHeadlineUnderline;
     this.viewPagerIndicator = viewPagerIndicator;
     this.viewPagerLabel = viewPagerLabel;
   }

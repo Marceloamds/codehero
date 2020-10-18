@@ -17,7 +17,7 @@ class CharacterDetailsActivity : BaseActivity() {
     private val _viewModel: CharacterDetailsViewModel by viewModel()
 
     private lateinit var binding: ActivityCharacterDetailsBinding
-    private val intentCharacter by lazy { intent.getSerializableExtra(HERO_EXTRA) as Character }
+    private val intentCharacter by lazy { intent.getSerializableExtra(CHARACTER_EXTRA) as Character }
     private var character: Character? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,11 +37,11 @@ class CharacterDetailsActivity : BaseActivity() {
 
 
     companion object {
-        private const val HERO_EXTRA = "HERO_EXTRA"
+        private const val CHARACTER_EXTRA = "CHARACTER_EXTRA"
 
         fun createIntent(context: Context, character: Character): Intent {
             return Intent(context, CharacterDetailsActivity::class.java).apply {
-                putExtra(HERO_EXTRA, character)
+                putExtra(CHARACTER_EXTRA, character)
             }
         }
     }
