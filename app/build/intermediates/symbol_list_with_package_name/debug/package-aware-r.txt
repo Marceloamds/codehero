@@ -1690,7 +1690,6 @@ id button_go_back
 id button_go_to
 id button_next_page
 id button_previous_page
-id button_try_again
 id cache_measures
 id cancel_button
 id center
@@ -2192,12 +2191,17 @@ string character_name
 string character_search_label
 string chip_text
 string clear_text_end_icon_content_description
+string comic_url_type_name
 string description_label
+string detail_url_type_name
 string empty_list_helper_text
 string error_icon_content_description
+string error_network
+string error_timeout
 string error_title
 string error_too_many_requests
 string error_unauthorized
+string error_unexpected
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -2258,6 +2262,7 @@ string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
 string urls_label
+string wiki_url_type_name
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

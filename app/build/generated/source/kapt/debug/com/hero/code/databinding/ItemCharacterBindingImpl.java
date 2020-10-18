@@ -13,7 +13,9 @@ public class ItemCharacterBindingImpl extends ItemCharacterBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.image_character, 1);
+        sViewsWithIds.put(R.id.text_character_name, 2);
     }
     // views
     // variables
@@ -31,8 +33,6 @@ public class ItemCharacterBindingImpl extends ItemCharacterBinding  {
             , (android.widget.TextView) bindings[2]
             );
         this.constraintLayoutHeroPreview.setTag(null);
-        this.imageCharacter.setTag(null);
-        this.textCharacterName.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
@@ -41,7 +41,7 @@ public class ItemCharacterBindingImpl extends ItemCharacterBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x2L;
+                mDirtyFlags = 0x1L;
         }
         requestRebind();
     }
@@ -59,22 +59,7 @@ public class ItemCharacterBindingImpl extends ItemCharacterBinding  {
     @Override
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
-        if (BR.character == variableId) {
-            setCharacter((com.hero.code.domain.entity.character.Character) variable);
-        }
-        else {
-            variableSet = false;
-        }
             return variableSet;
-    }
-
-    public void setCharacter(@Nullable com.hero.code.domain.entity.character.Character Character) {
-        this.mCharacter = Character;
-        synchronized(this) {
-            mDirtyFlags |= 0x1L;
-        }
-        notifyPropertyChanged(BR.character);
-        super.requestRebind();
     }
 
     @Override
@@ -91,33 +76,14 @@ public class ItemCharacterBindingImpl extends ItemCharacterBinding  {
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
-        com.hero.code.domain.entity.character.Character character = mCharacter;
-        java.lang.String characterName = null;
-
-        if ((dirtyFlags & 0x3L) != 0) {
-
-
-
-                if (character != null) {
-                    // read character.name
-                    characterName = character.getName();
-                }
-        }
         // batch finished
-        if ((dirtyFlags & 0x3L) != 0) {
-            // api target 1
-
-            com.hero.code.presentation.view.character.show.ShowCharacterFragment.loadCharacterImage(this.imageCharacter, character);
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textCharacterName, characterName);
-        }
     }
     // Listener Stub Implementations
     // callback impls
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): character
-        flag 1 (0x2L): null
+        flag 0 (0x1L): null
     flag mapping end*/
     //end
 }

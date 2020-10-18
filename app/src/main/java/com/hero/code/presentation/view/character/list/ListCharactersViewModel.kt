@@ -27,11 +27,15 @@ class ListCharactersViewModel(
     }
 
     private fun getListCharactersInfo() {
-        launchDataLoad {
+        launchDataLoad(onFailure = ::onFailure) {
             _listCharactersInfo.value = ListCharactersInfo(
                 getCharactersTotalPages.execute(currentQuery),
                 currentQuery
             )
         }
+    }
+
+    private fun onFailure(throwable: Throwable) {
+        setDialog(throwable) { getListCharactersInfo() }
     }
 }

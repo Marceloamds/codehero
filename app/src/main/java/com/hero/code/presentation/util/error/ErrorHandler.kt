@@ -1,13 +1,14 @@
 package com.hero.code.presentation.util.error
 
 import android.content.Context
-import android.util.Log
 import androidx.annotation.StringRes
-import com.hero.code.BuildConfig
 import com.hero.code.R
 import com.hero.code.domain.entity.error.HttpErrorType
 import com.hero.code.domain.entity.error.RequestException
 import com.hero.code.presentation.util.dialog.DialogData
+import java.io.IOException
+import java.net.SocketTimeoutException
+import java.net.UnknownHostException
 
 class ErrorHandler constructor(private val context: Context) {
 
@@ -19,18 +20,28 @@ class ErrorHandler constructor(private val context: Context) {
     }
 
     private fun getErrorString(throwable: Throwable): String? {
-        if (BuildConfig.DEBUG) Log.e(
-            context.getString(R.string.app_name),
-            throwable.message,
-            throwable
-        )
-        return if (throwable is RequestException) {
-            when (throwable.httpErrorType) {
-                HttpErrorType.UNAUTHORIZED -> res(R.string.error_unauthorized)
-                HttpErrorType.TOO_MANY_REQUESTS -> res(R.string.error_too_many_requests)
-                else -> null
-            }
-        } else null
+        return if (throwable is RequestException) getStringFromRequestException(throwable)
+        else getStringFromNonRequestException(throwable)
+    }
+
+    private fun getStringFromRequestException(throwable: RequestException): String? {
+        return when {
+            throwable is RequestException.TimeoutError -> res(R.string.error_timeout)
+            throwable is RequestException.NetworkError -> res(R.string.error_network)
+            throwable is RequestException.UnexpectedError -> res(R.string.error_unexpected)
+            throwable.httpErrorType == HttpErrorType.UNAUTHORIZED -> res(R.string.error_unauthorized)
+            throwable.httpErrorType == HttpErrorType.TOO_MANY_REQUESTS -> res(R.string.error_too_many_requests)
+            else -> null
+        }
+    }
+
+    private fun getStringFromNonRequestException(throwable: Throwable): String? {
+        return when (throwable) {
+            is SocketTimeoutException -> res(R.string.error_timeout)
+            is UnknownHostException -> res(R.string.error_network)
+            is IOException -> res(R.string.error_network)
+            else -> null
+        }
     }
 
     private fun res(@StringRes stringId: Int) = context.getString(stringId)

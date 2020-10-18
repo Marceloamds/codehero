@@ -61,6 +61,6 @@ fun Context.openBrowser(url: String?) {
     }
 }
 
-fun AppCompatActivity.onGoTo(navData: NavData?) {
+fun Context.onGoTo(navData: NavData?) {
     navData?.navigate(this)
 }

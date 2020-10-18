@@ -27,8 +27,7 @@ public class ActivityListCharactersBindingImpl extends ActivityListCharactersBin
         sViewsWithIds.put(R.id.empty_list_layout, 11);
         sViewsWithIds.put(R.id.image_view_empty_list, 12);
         sViewsWithIds.put(R.id.text_view_empty_message, 13);
-        sViewsWithIds.put(R.id.button_try_again, 14);
-        sViewsWithIds.put(R.id.placeholder_view, 15);
+        sViewsWithIds.put(R.id.placeholder_view, 14);
     }
     // views
     @NonNull
@@ -39,17 +38,16 @@ public class ActivityListCharactersBindingImpl extends ActivityListCharactersBin
     // Inverse Binding Event Handlers
 
     public ActivityListCharactersBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 16, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 15, sIncludes, sViewsWithIds));
     }
     private ActivityListCharactersBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.ImageView) bindings[9]
             , (android.widget.ImageView) bindings[8]
-            , (android.widget.Button) bindings[14]
             , (androidx.viewpager2.widget.ViewPager2) bindings[7]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[11]
             , (android.widget.ImageView) bindings[12]
-            , (com.hero.code.presentation.util.placeholder.PlaceholderView) bindings[15]
+            , (com.hero.code.presentation.util.placeholder.PlaceholderView) bindings[14]
             , (androidx.appcompat.widget.SearchView) bindings[5]
             , (android.widget.TextView) bindings[4]
             , (android.widget.TextView) bindings[1]

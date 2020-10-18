@@ -13,9 +13,9 @@ class ShowCharacterViewModel constructor(
     private val getCharactersList: GetCharactersList,
 ) : BaseViewModel() {
 
-    val charactersList: LiveData<List<Character?>> get() = _charactersList
+    val charactersList: LiveData<CharacterPage> get() = _charactersList
 
-    private val _charactersList by lazy { MutableLiveData<List<Character?>>() }
+    private val _charactersList by lazy { MutableLiveData<CharacterPage>() }
 
     init {
         requestCharacters()
@@ -29,7 +29,9 @@ class ShowCharacterViewModel constructor(
 
     private fun requestCharacters() {
         launchDataLoad(onFailure = ::onFailure) {
-            _charactersList.value = getCharactersList.execute(position, query)
+            getCharactersList.execute(position, query)?.let {
+                _charactersList.value = CharacterPage.fromCharacterList(it)
+            }
         }
     }
 

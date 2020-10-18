@@ -24,9 +24,9 @@ class CharacterUrlViewHolder(
     private fun UrlType.getName(): String {
         val context = binding.root.context
         return when (this) {
-            UrlType.Detail -> context.getString(R.string.detail_url_type_name)
-            UrlType.Wiki -> context.getString(R.string.wiki_url_type_name)
-            UrlType.ComicLink -> context.getString(R.string.comic_url_type_name)
+            is UrlType.Detail -> context.getString(R.string.detail_url_type_name)
+            is UrlType.Wiki -> context.getString(R.string.wiki_url_type_name)
+            is UrlType.ComicLink -> context.getString(R.string.comic_url_type_name)
             is UrlType.Other -> type
         }
     }

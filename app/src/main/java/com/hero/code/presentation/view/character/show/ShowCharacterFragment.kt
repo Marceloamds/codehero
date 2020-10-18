@@ -1,5 +1,6 @@
 package com.hero.code.presentation.view.character.show
 
+import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,8 +9,10 @@ import androidx.fragment.app.Fragment
 import com.hero.code.databinding.FragmentShowCharacterBinding
 import com.hero.code.databinding.ItemCharacterBinding
 import com.hero.code.domain.entity.character.Character
+import com.hero.code.presentation.util.dialog.DialogData
 import com.hero.code.presentation.util.extension.circleLoad
-import com.hero.code.presentation.util.navigation.NavData
+import com.hero.code.presentation.util.extension.onGoTo
+import com.hero.code.presentation.util.extension.showDialog
 import org.koin.android.viewmodel.ext.android.viewModel
 import org.koin.core.parameter.parametersOf
 
@@ -21,6 +24,7 @@ class ShowCharacterFragment : Fragment() {
     private val query by lazy { arguments?.getString(QUERY_EXTRA, "") ?: "" }
 
     private val _viewModel: ShowCharacterViewModel by viewModel { parametersOf(position, query) }
+    private var dialog: Dialog? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,19 +39,20 @@ class ShowCharacterFragment : Fragment() {
 
     private fun subscribeUi() {
         with(_viewModel) {
+            dialog.observe(viewLifecycleOwner, ::onNextDialog)
             charactersList.observe(viewLifecycleOwner, ::onCharactersReceived)
             placeholder.observe(viewLifecycleOwner) { binding.placeholderView.setPlaceholder(it) }
-            goTo.observe(viewLifecycleOwner, ::onGoTo)
+            goTo.observe(viewLifecycleOwner) { context?.run { onGoTo(it) } }
         }
     }
 
-    private fun onCharactersReceived(characterList: List<Character?>?) {
-        characterList?.let {
+    private fun onCharactersReceived(characterPage: CharacterPage?) {
+        characterPage?.let {
             with(binding) {
-                firstCharacter.setupCharacter(characterList[0])
-                secondCharacter.setupCharacter(characterList[1])
-                thirdCharacter.setupCharacter(characterList[2])
-                fourthCharacter.setupCharacter(characterList[3])
+                firstCharacter.setupCharacter(characterPage.firstCharacter)
+                secondCharacter.setupCharacter(characterPage.secondCharacter)
+                thirdCharacter.setupCharacter(characterPage.thirdCharacter)
+                fourthCharacter.setupCharacter(characterPage.fourthCharacter)
             }
         }
     }
@@ -58,8 +63,9 @@ class ShowCharacterFragment : Fragment() {
         root.setOnClickListener { _viewModel.onCharacterSelected(character) }
     }
 
-    private fun onGoTo(navData: NavData?) {
-        context?.let { navData?.navigate(it) }
+    private fun onNextDialog(dialogData: DialogData?) {
+        dialog?.dismiss()
+        dialog = dialogData?.let { context?.showDialog(it) }
     }
 
     companion object {

@@ -22,7 +22,7 @@ open class RequestHandler {
                 throw when (t) {
                     is RequestException -> t
                     is SocketTimeoutException -> RequestException.TimeoutError()
-                    is UnknownHostException -> RequestException.UnexpectedError()
+                    is UnknownHostException -> RequestException.NetworkError()
                     is IOException -> RequestException.NetworkError()
                     else -> RequestException.UnexpectedError()
                 }

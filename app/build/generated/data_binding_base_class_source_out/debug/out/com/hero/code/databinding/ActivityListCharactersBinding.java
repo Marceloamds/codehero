@@ -4,7 +4,6 @@ package com.hero.code.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -26,9 +25,6 @@ public abstract class ActivityListCharactersBinding extends ViewDataBinding {
 
   @NonNull
   public final ImageView buttonPreviousPage;
-
-  @NonNull
-  public final Button buttonTryAgain;
 
   @NonNull
   public final ViewPager2 characterViewPager;
@@ -68,15 +64,14 @@ public abstract class ActivityListCharactersBinding extends ViewDataBinding {
 
   protected ActivityListCharactersBinding(Object _bindingComponent, View _root,
       int _localFieldCount, ImageView buttonNextPage, ImageView buttonPreviousPage,
-      Button buttonTryAgain, ViewPager2 characterViewPager, ConstraintLayout emptyListLayout,
-      ImageView imageViewEmptyList, PlaceholderView placeholderView, SearchView searchViewCharacter,
+      ViewPager2 characterViewPager, ConstraintLayout emptyListLayout, ImageView imageViewEmptyList,
+      PlaceholderView placeholderView, SearchView searchViewCharacter,
       TextView textCharacterNameLabel, TextView textListCharactersHeadline,
       TextView textListCharactersTitle, TextView textViewEmptyMessage, View viewHeadlineUnderline,
       TabLayout viewPagerIndicator, TextView viewPagerLabel) {
     super(_bindingComponent, _root, _localFieldCount);
     this.buttonNextPage = buttonNextPage;
     this.buttonPreviousPage = buttonPreviousPage;
-    this.buttonTryAgain = buttonTryAgain;
     this.characterViewPager = characterViewPager;
     this.emptyListLayout = emptyListLayout;
     this.imageViewEmptyList = imageViewEmptyList;

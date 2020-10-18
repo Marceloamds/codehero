@@ -1,6 +1,8 @@
 package com.hero.code.domain.entity.character
 
-sealed class UrlType {
+import java.io.Serializable
+
+sealed class UrlType : Serializable {
 
     object Detail : UrlType()
     object ComicLink : UrlType()

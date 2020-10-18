@@ -8,12 +8,12 @@
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/activity_splash.xml"
     },
     {
-        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_character.xml",
-        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/item_character.xml"
-    },
-    {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_show_character.xml",
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/fragment_show_character.xml"
+    },
+    {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_character.xml",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/item_character.xml"
     },
     {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_character_details.xml",
