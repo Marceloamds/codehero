@@ -7,13 +7,6 @@ import android.view.WindowManager
 import android.widget.ImageView
 import androidx.annotation.IdRes
 import com.bumptech.glide.Glide
-import com.hero.code.presentation.util.click.SafeClickListener
-
-fun View.setSafeClickListener(intervalInMillis: Int = 1000, callback: () -> Unit) {
-    SafeClickListener(callback, intervalInMillis).apply {
-        setOnClickListener(this::onClick)
-    }
-}
 
 // transparent
 fun transparentStatusAndNavigation(window: Window) {
