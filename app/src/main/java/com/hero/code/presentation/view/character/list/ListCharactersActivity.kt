@@ -1,36 +1,41 @@
 package com.hero.code.presentation.view.character.list
 
+import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.google.android.material.tabs.TabLayoutMediator
 import com.hero.code.R
 import com.hero.code.databinding.ActivityListCharactersBinding
-import com.hero.code.presentation.util.base.BaseActivity
-import com.hero.code.presentation.util.base.BaseViewModel
+import com.hero.code.presentation.util.dialog.DialogData
+import com.hero.code.presentation.util.extension.showDialog
+import com.hero.code.presentation.util.extension.onGoTo
 import com.hero.code.presentation.util.query.QueryChangesHelper
 import org.koin.android.viewmodel.ext.android.viewModel
 
-class ListCharactersActivity : BaseActivity() {
+class ListCharactersActivity : AppCompatActivity() {
 
-    override val baseViewModel: BaseViewModel get() = _viewModel
     private val _viewModel: ListCharactersViewModel by viewModel()
 
     private lateinit var binding: ActivityListCharactersBinding
     private lateinit var adapter: ListCharactersAdapter
 
     private var currentTabLayoutMediator: TabLayoutMediator? = null
+    private var dialog: Dialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_list_characters)
         setupUi()
+        subscribeUi()
     }
 
-    override fun subscribeUi() {
-        super.subscribeUi()
+    private fun subscribeUi() {
+        _viewModel.dialog.observe(this, ::onNextDialog)
+        _viewModel.goTo.observe(this, ::onGoTo)
         _viewModel.placeholder.observe(this) { binding.placeholderView.setPlaceholder(it) }
         _viewModel.listCharactersInfo.observe(this, ::onListCharactersInfoReceived)
     }
@@ -74,6 +79,11 @@ class ListCharactersActivity : BaseActivity() {
             clearFocus()
             _viewModel.onQuerySubmitted("")
         }
+    }
+
+    private fun onNextDialog(dialogData: DialogData?) {
+        dialog?.dismiss()
+        dialog = dialogData?.let { showDialog(it) }
     }
 
     companion object {

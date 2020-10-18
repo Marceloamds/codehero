@@ -8,8 +8,9 @@ import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import androidx.fragment.app.Fragment
 import com.hero.code.databinding.FragmentShowCharacterBinding
+import com.hero.code.databinding.ItemCharacterBinding
 import com.hero.code.domain.entity.character.Character
-import com.hero.code.presentation.util.extension.load
+import com.hero.code.presentation.util.extension.circleLoad
 import com.hero.code.presentation.util.navigation.NavData
 import org.koin.android.viewmodel.ext.android.viewModel
 import org.koin.core.parameter.parametersOf
@@ -35,19 +36,26 @@ class ShowCharacterFragment : Fragment() {
 
     private fun subscribeUi() {
         _viewModel.charactersList.observe(viewLifecycleOwner, ::onCharactersReceived)
-        _viewModel.placeholder.observe(viewLifecycleOwner) { binding.placeholderView.setPlaceholder(it) }
+        _viewModel.placeholder.observe(viewLifecycleOwner) {
+            binding.placeholderView.setPlaceholder(it)
+        }
         _viewModel.goTo.observe(viewLifecycleOwner, ::onGoTo)
     }
 
     private fun onCharactersReceived(characterList: List<Character?>?) {
         characterList?.let {
             with(binding) {
-                firstCharacter.character = characterList[0]
-                secondCharacter.character = characterList[1]
-                thirdCharacter.character = characterList[2]
-                fourthCharacter.character = characterList[3]
+                firstCharacter.setupCharacter(characterList[0])
+                secondCharacter.setupCharacter(characterList[1])
+                thirdCharacter.setupCharacter(characterList[2])
+                fourthCharacter.setupCharacter(characterList[3])
             }
         }
+    }
+
+    private fun ItemCharacterBinding.setupCharacter(character: Character?) {
+        this.character = character
+        root.setOnClickListener { _viewModel.onCharacterSelected(character) }
     }
 
     private fun onGoTo(navData: NavData?) {
@@ -68,7 +76,7 @@ class ShowCharacterFragment : Fragment() {
         @BindingAdapter("loadCharacterImage")
         @JvmStatic
         fun ImageView.loadCharacterImage(character: Character?) {
-            load(character?.thumbnail)
+            circleLoad(character?.thumbnail)
         }
     }
 }

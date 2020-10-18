@@ -33,6 +33,10 @@ fun setWindowFlag(bits: Int, on: Boolean, window: Window) {
     win.attributes = winParams
 }
 
-fun ImageView.load(url: String?) {
+fun ImageView.circleLoad(url: String?) {
     Glide.with(this).load(url).circleCrop().into(this)
+}
+
+fun ImageView.load(url: String?) {
+    Glide.with(this).load(url).into(this)
 }

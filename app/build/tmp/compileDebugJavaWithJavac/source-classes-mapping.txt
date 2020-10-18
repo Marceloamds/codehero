@@ -1,3 +1,5 @@
+com/hero/code/databinding/ItemUrlBindingImpl.java
+ com.hero.code.databinding.ItemUrlBindingImpl
 com/hero/code/DataBindingTriggerClass.java
  com.hero.code.DataBindingTriggerClass
 com/hero/code/databinding/FragmentShowCharacterBinding.java
@@ -24,6 +26,8 @@ androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
 com/hero/code/BR.java
  com.hero.code.BR
+com/hero/code/databinding/ItemUrlBinding.java
+ com.hero.code.databinding.ItemUrlBinding
 com/hero/code/databinding/ActivityListCharactersBindingImpl.java
  com.hero.code.databinding.ActivityListCharactersBindingImpl
 com/hero/code/databinding/ActivityCharacterDetailsBindingImpl.java

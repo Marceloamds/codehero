@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import com.hero.code.domain.entity.character.Character
 import com.hero.code.domain.interactor.GetCharactersList
 import com.hero.code.presentation.util.base.BaseViewModel
+import com.hero.code.presentation.view.character.details.CharacterDetailsNavData
 
 class ShowCharacterViewModel constructor(
     private val position: Int,
@@ -21,7 +22,9 @@ class ShowCharacterViewModel constructor(
     }
 
     fun onCharacterSelected(character: Character?) {
-
+        character?.let{
+            goTo(CharacterDetailsNavData(it))
+        }
     }
 
     private fun requestCharacters() {

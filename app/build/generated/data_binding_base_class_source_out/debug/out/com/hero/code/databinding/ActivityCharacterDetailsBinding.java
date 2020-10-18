@@ -4,7 +4,6 @@ package com.hero.code.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -12,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.hero.code.R;
 import java.lang.Deprecated;
@@ -19,16 +19,7 @@ import java.lang.Object;
 
 public abstract class ActivityCharacterDetailsBinding extends ViewDataBinding {
   @NonNull
-  public final ImageView buttonFavorite;
-
-  @NonNull
   public final ImageView buttonGoBack;
-
-  @NonNull
-  public final Button buttonGoToReview;
-
-  @NonNull
-  public final ImageView buttonShare;
 
   @NonNull
   public final ConstraintLayout constraintLayout;
@@ -40,52 +31,40 @@ public abstract class ActivityCharacterDetailsBinding extends ViewDataBinding {
   public final View guideline;
 
   @NonNull
-  public final ShapeableImageView imageViewHeroPoster;
+  public final ShapeableImageView imageViewCharacterThumbnail;
 
   @NonNull
-  public final TextView textViewHeroTitle;
+  public final RecyclerView recyclerViewUrls;
 
   @NonNull
-  public final TextView textViewOpeningDate;
+  public final TextView textViewCharacterName;
 
   @NonNull
-  public final TextView textViewPublication;
+  public final TextView textViewDescription;
 
   @NonNull
-  public final TextView textViewReviewHint;
+  public final TextView textViewDescriptionLabel;
 
   @NonNull
-  public final TextView textViewReviewTitle;
-
-  @NonNull
-  public final TextView textViewSynopsis;
-
-  @NonNull
-  public final TextView textViewSynopsisHint;
+  public final TextView textViewUrlsLabel;
 
   protected ActivityCharacterDetailsBinding(Object _bindingComponent, View _root,
-      int _localFieldCount, ImageView buttonFavorite, ImageView buttonGoBack,
-      Button buttonGoToReview, ImageView buttonShare, ConstraintLayout constraintLayout,
+      int _localFieldCount, ImageView buttonGoBack, ConstraintLayout constraintLayout,
       ConstraintLayout constraintLayoutHeroDetails, View guideline,
-      ShapeableImageView imageViewHeroPoster, TextView textViewHeroTitle,
-      TextView textViewOpeningDate, TextView textViewPublication, TextView textViewReviewHint,
-      TextView textViewReviewTitle, TextView textViewSynopsis, TextView textViewSynopsisHint) {
+      ShapeableImageView imageViewCharacterThumbnail, RecyclerView recyclerViewUrls,
+      TextView textViewCharacterName, TextView textViewDescription,
+      TextView textViewDescriptionLabel, TextView textViewUrlsLabel) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.buttonFavorite = buttonFavorite;
     this.buttonGoBack = buttonGoBack;
-    this.buttonGoToReview = buttonGoToReview;
-    this.buttonShare = buttonShare;
     this.constraintLayout = constraintLayout;
     this.constraintLayoutHeroDetails = constraintLayoutHeroDetails;
     this.guideline = guideline;
-    this.imageViewHeroPoster = imageViewHeroPoster;
-    this.textViewHeroTitle = textViewHeroTitle;
-    this.textViewOpeningDate = textViewOpeningDate;
-    this.textViewPublication = textViewPublication;
-    this.textViewReviewHint = textViewReviewHint;
-    this.textViewReviewTitle = textViewReviewTitle;
-    this.textViewSynopsis = textViewSynopsis;
-    this.textViewSynopsisHint = textViewSynopsisHint;
+    this.imageViewCharacterThumbnail = imageViewCharacterThumbnail;
+    this.recyclerViewUrls = recyclerViewUrls;
+    this.textViewCharacterName = textViewCharacterName;
+    this.textViewDescription = textViewDescription;
+    this.textViewDescriptionLabel = textViewDescriptionLabel;
+    this.textViewUrlsLabel = textViewUrlsLabel;
   }
 
   @NonNull

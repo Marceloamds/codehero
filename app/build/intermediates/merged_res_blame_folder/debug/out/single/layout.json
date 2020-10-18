@@ -20,6 +20,10 @@
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/activity_character_details.xml"
     },
     {
+        "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_url.xml",
+        "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/item_url.xml"
+    },
+    {
         "merged": "/home/marcelo/Documentos/CodeHero/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_list_characters.xml",
         "source": "/home/marcelo/Documentos/CodeHero/app/src/main/res/layout/activity_list_characters.xml"
     },

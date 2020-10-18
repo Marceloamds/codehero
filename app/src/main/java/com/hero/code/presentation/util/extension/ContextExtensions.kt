@@ -1,6 +1,5 @@
 package com.hero.code.presentation.util.extension
 
-import android.app.Activity
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Context
@@ -8,8 +7,10 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import android.webkit.URLUtil
+import androidx.appcompat.app.AppCompatActivity
 import com.hero.code.R
 import com.hero.code.presentation.util.dialog.DialogData
+import com.hero.code.presentation.util.navigation.NavData
 
 fun Context.showDialog(dialogData: DialogData): Dialog {
     val builder = AlertDialog.Builder(this)
@@ -43,17 +44,23 @@ fun AlertDialog.Builder.setNegativeButton(buttonText: String?, onClick: (() -> U
         onClick?.let { { _: DialogInterface, _: Int -> it() } }
     )
 
-fun Context.openBrowser(url: String) {
-    val formattedUrl = with(url.trim()) {
-        if (URLUtil.isHttpUrl(this) || URLUtil.isHttpsUrl(this)) {
-            this
-        } else {
-            "http://$this"
+fun Context.openBrowser(url: String?) {
+    url?.let {
+        val formattedUrl = with(url.trim()) {
+            if (URLUtil.isHttpUrl(this) || URLUtil.isHttpsUrl(this)) {
+                this
+            } else {
+                "http://$this"
+            }
         }
+        val browserIntent = Intent(
+            Intent.ACTION_VIEW,
+            Uri.parse(formattedUrl)
+        ).apply { addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) }
+        startActivity(browserIntent)
     }
-    val browserIntent = Intent(
-        Intent.ACTION_VIEW,
-        Uri.parse(formattedUrl)
-    ).apply { addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) }
-    startActivity(browserIntent)
+}
+
+fun AppCompatActivity.onGoTo(navData: NavData?) {
+    navData?.navigate(this)
 }

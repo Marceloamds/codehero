@@ -15,20 +15,15 @@ public class ActivityCharacterDetailsBindingImpl extends ActivityCharacterDetail
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.constraintLayout, 1);
-        sViewsWithIds.put(R.id.image_view_hero_poster, 2);
+        sViewsWithIds.put(R.id.image_view_character_thumbnail, 2);
         sViewsWithIds.put(R.id.button_go_back, 3);
-        sViewsWithIds.put(R.id.button_favorite, 4);
-        sViewsWithIds.put(R.id.guideline, 5);
-        sViewsWithIds.put(R.id.constraint_layout_hero_details, 6);
-        sViewsWithIds.put(R.id.text_view_hero_title, 7);
-        sViewsWithIds.put(R.id.button_share, 8);
-        sViewsWithIds.put(R.id.text_view_opening_date, 9);
-        sViewsWithIds.put(R.id.text_view_synopsis_hint, 10);
-        sViewsWithIds.put(R.id.text_view_synopsis, 11);
-        sViewsWithIds.put(R.id.text_view_review_hint, 12);
-        sViewsWithIds.put(R.id.text_view_review_title, 13);
-        sViewsWithIds.put(R.id.text_view_publication, 14);
-        sViewsWithIds.put(R.id.button_go_to_review, 15);
+        sViewsWithIds.put(R.id.guideline, 4);
+        sViewsWithIds.put(R.id.constraint_layout_hero_details, 5);
+        sViewsWithIds.put(R.id.text_view_character_name, 6);
+        sViewsWithIds.put(R.id.text_view_description_label, 7);
+        sViewsWithIds.put(R.id.text_view_description, 8);
+        sViewsWithIds.put(R.id.text_view_urls_label, 9);
+        sViewsWithIds.put(R.id.recycler_view_urls, 10);
     }
     // views
     @NonNull
@@ -39,25 +34,20 @@ public class ActivityCharacterDetailsBindingImpl extends ActivityCharacterDetail
     // Inverse Binding Event Handlers
 
     public ActivityCharacterDetailsBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 16, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds));
     }
     private ActivityCharacterDetailsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.ImageView) bindings[4]
             , (android.widget.ImageView) bindings[3]
-            , (android.widget.Button) bindings[15]
-            , (android.widget.ImageView) bindings[8]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[6]
-            , (android.view.View) bindings[5]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[5]
+            , (android.view.View) bindings[4]
             , (com.google.android.material.imageview.ShapeableImageView) bindings[2]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[10]
+            , (android.widget.TextView) bindings[6]
+            , (android.widget.TextView) bindings[8]
             , (android.widget.TextView) bindings[7]
             , (android.widget.TextView) bindings[9]
-            , (android.widget.TextView) bindings[14]
-            , (android.widget.TextView) bindings[12]
-            , (android.widget.TextView) bindings[13]
-            , (android.widget.TextView) bindings[11]
-            , (android.widget.TextView) bindings[10]
             );
         this.mboundView0 = (android.widget.ScrollView) bindings[0];
         this.mboundView0.setTag(null);

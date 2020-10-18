@@ -28,4 +28,10 @@
         <item name="android:editTextColor">@color/colorPrimary</item>
         <item name="android:textSize">12sp</item>
     </style>
+
+    <style name="BottomRoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">8dp</item>
+        <item name="cornerSizeBottomRight">8dp</item>
+    </style>
 </resources>

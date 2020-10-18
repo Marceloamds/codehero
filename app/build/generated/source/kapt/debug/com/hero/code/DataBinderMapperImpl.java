@@ -12,6 +12,7 @@ import com.hero.code.databinding.ActivitySplashBindingImpl;
 import com.hero.code.databinding.FragmentShowCharacterBindingImpl;
 import com.hero.code.databinding.ItemCharacterBindingImpl;
 import com.hero.code.databinding.ItemProgressBindingImpl;
+import com.hero.code.databinding.ItemUrlBindingImpl;
 import com.hero.code.databinding.LoadingPlaceholderBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -36,9 +37,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ITEMPROGRESS = 6;
 
-  private static final int LAYOUT_LOADINGPLACEHOLDER = 7;
+  private static final int LAYOUT_ITEMURL = 7;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(7);
+  private static final int LAYOUT_LOADINGPLACEHOLDER = 8;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(8);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.activity_character_details, LAYOUT_ACTIVITYCHARACTERDETAILS);
@@ -47,6 +50,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.fragment_show_character, LAYOUT_FRAGMENTSHOWCHARACTER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.item_character, LAYOUT_ITEMCHARACTER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.item_progress, LAYOUT_ITEMPROGRESS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.item_url, LAYOUT_ITEMURL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.hero.code.R.layout.loading_placeholder, LAYOUT_LOADINGPLACEHOLDER);
   }
 
@@ -94,6 +98,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ItemProgressBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for item_progress is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ITEMURL: {
+          if ("layout/item_url_0".equals(tag)) {
+            return new ItemUrlBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_url is invalid. Received: " + tag);
         }
         case  LAYOUT_LOADINGPLACEHOLDER: {
           if ("layout/loading_placeholder_0".equals(tag)) {
@@ -157,7 +167,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(7);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(8);
 
     static {
       sKeys.put("layout/activity_character_details_0", com.hero.code.R.layout.activity_character_details);
@@ -166,6 +176,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/fragment_show_character_0", com.hero.code.R.layout.fragment_show_character);
       sKeys.put("layout/item_character_0", com.hero.code.R.layout.item_character);
       sKeys.put("layout/item_progress_0", com.hero.code.R.layout.item_progress);
+      sKeys.put("layout/item_url_0", com.hero.code.R.layout.item_url);
       sKeys.put("layout/loading_placeholder_0", com.hero.code.R.layout.loading_placeholder);
     }
   }
