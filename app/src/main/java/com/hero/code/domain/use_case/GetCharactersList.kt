@@ -1,4 +1,4 @@
-package com.hero.code.domain.interactor
+package com.hero.code.domain.use_case
 
 import com.hero.code.domain.boundary.CharacterRepository
 

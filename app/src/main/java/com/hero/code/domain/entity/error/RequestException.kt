@@ -4,8 +4,7 @@ sealed class RequestException constructor(
     val httpErrorType: HttpErrorType?
 ) : Exception() {
 
-    class HttpError(errorCode: Int) :
-        RequestException(HttpErrorType.getErrorForCode(errorCode))
+    class HttpError(errorCode: Int) : RequestException(HttpErrorType.getErrorForCode(errorCode))
 
     class NetworkError : RequestException(null)
 

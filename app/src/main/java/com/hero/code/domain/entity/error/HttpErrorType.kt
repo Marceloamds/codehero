@@ -9,7 +9,7 @@ enum class HttpErrorType {
             return errorCode?.let {
                 when (it) {
                     401 -> UNAUTHORIZED
-                    429 -> TOO_MANY_REQUESTS
+                    409 -> TOO_MANY_REQUESTS
                     else -> null
                 }
             }

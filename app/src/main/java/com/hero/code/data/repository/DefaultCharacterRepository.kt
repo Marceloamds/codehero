@@ -23,5 +23,5 @@ class DefaultCharacterRepository constructor(
         )?.data?.total
     }
 
-    private fun String.nullIfEmpty() = if(isEmpty()) null else this
+    private fun String.nullIfEmpty() = if (isEmpty()) null else this
 }

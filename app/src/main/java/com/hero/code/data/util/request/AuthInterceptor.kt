@@ -11,7 +11,7 @@ class AuthInterceptor : Interceptor {
 
     override fun intercept(chain: Interceptor.Chain): Response {
         val timestamp = Date().time.toString()
-        val encryptionString: String = timestamp + BuildConfig.PRIVATE_KEY + BuildConfig.ACCESS_KEY
+        val encryptionString = timestamp + BuildConfig.PRIVATE_KEY + BuildConfig.ACCESS_KEY
         val originalUrl = chain.request().url
         val queriedUrl = originalUrl
             .newBuilder()
@@ -24,7 +24,7 @@ class AuthInterceptor : Interceptor {
     }
 
     private fun md5Encryption(str: String): String {
-        val md5ByteArray =  MessageDigest.getInstance(MD5_ALGORITHM).digest(str.toByteArray(UTF_8))
+        val md5ByteArray = MessageDigest.getInstance(MD5_ALGORITHM).digest(str.toByteArray(UTF_8))
         return md5ByteArray.toHex()
     }
 

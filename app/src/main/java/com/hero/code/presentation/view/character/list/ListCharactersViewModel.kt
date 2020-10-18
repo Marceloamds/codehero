@@ -2,7 +2,7 @@ package com.hero.code.presentation.view.character.list
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.hero.code.domain.interactor.GetCharactersTotalPages
+import com.hero.code.domain.use_case.GetCharactersTotalPages
 import com.hero.code.presentation.util.base.BaseViewModel
 
 class ListCharactersViewModel(
@@ -13,15 +13,15 @@ class ListCharactersViewModel(
 
     private val _listCharactersInfo by lazy { MutableLiveData<ListCharactersInfo>() }
 
-    var currentQuery = ""
+    private var currentQuery = ""
 
     init {
         getListCharactersInfo()
     }
 
     fun onQuerySubmitted(query: String?) {
-        query?.let {
-            currentQuery = it
+        if (query != null && query != currentQuery) {
+            currentQuery = query
             getListCharactersInfo()
         }
     }

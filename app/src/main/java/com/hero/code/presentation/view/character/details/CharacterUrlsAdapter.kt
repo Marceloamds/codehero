@@ -16,8 +16,7 @@ class CharacterUrlsAdapter : ListAdapter<Url, CharacterUrlViewHolder>(DiffUtilCa
     }
 
     companion object DiffUtilCallback : DiffUtil.ItemCallback<Url>() {
-        override fun areItemsTheSame(oldItem: Url, newItem: Url): Boolean = oldItem == newItem
-        override fun areContentsTheSame(oldItem: Url, newItem: Url): Boolean =
-            oldItem.url == newItem.url
+        override fun areItemsTheSame(oldItem: Url, newItem: Url) = (oldItem == newItem)
+        override fun areContentsTheSame(oldItem: Url, newItem: Url) = (oldItem.url == newItem.url)
     }
 }

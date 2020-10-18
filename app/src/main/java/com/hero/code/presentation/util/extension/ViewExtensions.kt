@@ -5,6 +5,7 @@ import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.widget.ImageView
+import androidx.annotation.IdRes
 import com.bumptech.glide.Glide
 import com.hero.code.presentation.util.click.SafeClickListener
 
@@ -39,4 +40,8 @@ fun ImageView.circleLoad(url: String?) {
 
 fun ImageView.load(url: String?) {
     Glide.with(this).load(url).into(this)
+}
+
+fun View.setOnClickListenerById(@IdRes id: Int, callback: () -> Unit) {
+    findViewById<View>(id).setOnClickListener { callback() }
 }

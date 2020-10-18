@@ -1,10 +1,10 @@
 package com.hero.code.presentation.di
 
-import com.hero.code.domain.interactor.GetCharactersList
-import com.hero.code.domain.interactor.GetCharactersTotalPages
+import com.hero.code.domain.use_case.GetCharactersList
+import com.hero.code.domain.use_case.GetCharactersTotalPages
 import org.koin.dsl.module
 
-fun interactorModule() = module {
+fun useCaseModule() = module {
     single {
         GetCharactersList(get())
     }

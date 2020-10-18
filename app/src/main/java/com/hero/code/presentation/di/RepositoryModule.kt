@@ -5,6 +5,7 @@ import com.hero.code.domain.boundary.CharacterRepository
 import org.koin.dsl.module
 
 fun repositoryModule() = module {
+
     single {
         DefaultCharacterRepository(get()) as CharacterRepository
     }

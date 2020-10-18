@@ -3,13 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-
-        <variable
-            name="character"
-            type="com.hero.code.domain.entity.character.Character" />
-    </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout_hero_preview"
         android:layout_width="match_parent"
@@ -27,8 +20,7 @@
             android:layout_margin="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:loadCharacterImage="@{character}" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_character_name"
@@ -39,7 +31,6 @@
             android:ellipsize="marquee"
             android:fontFamily="@font/roboto_regular"
             android:singleLine="true"
-            android:text="@{character.name}"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             app:layout_constrainedWidth="true"

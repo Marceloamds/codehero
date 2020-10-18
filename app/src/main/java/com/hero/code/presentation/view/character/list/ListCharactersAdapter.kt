@@ -7,7 +7,7 @@ import com.hero.code.presentation.view.character.show.ShowCharacterFragment
 class ListCharactersAdapter(
     fragmentActivity: FragmentActivity,
     private val totalPages: Int,
-    private val query: String = ""
+    private val query: String
 ) : FragmentStateAdapter(fragmentActivity) {
 
     override fun getItemCount() = totalPages

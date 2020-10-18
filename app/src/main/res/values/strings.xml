@@ -15,11 +15,14 @@
     <string name="character_search_label">Nome do Personagem</string>
     <string name="list_characters_title">TESTE FRONT END</string>
     <string name="list_characters_headline">BUSCA MARVEL</string>
-    <string name="empty_list_helper_text">Could not find any reviews for this search :(\n\nCheck out your internet connection or try again with another search!</string>
+    <string name="empty_list_helper_text">Não encontramos nenhum personagem com sua pesquisa :( \n\n Tente novamente com outra busca!</string>
     <!--Character Details-->
     <string name="description_label">Descrição</string>
     <string name="urls_label">Urls disponívels</string>
     <string name="go_to_page">Ir para %s</string>
     <string name="link_to">Link para "%s"</string>
     <string name="activity_character_details_no_description">Sem descrição disponível</string>
+    <string name="detail_url_type_name">detalhes</string>
+    <string name="wiki_url_type_name">wiki</string>
+    <string name="comic_url_type_name">quadrinhos</string>
 </resources>

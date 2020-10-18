@@ -3,7 +3,7 @@ package com.hero.code.presentation.view.character.show
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.hero.code.domain.entity.character.Character
-import com.hero.code.domain.interactor.GetCharactersList
+import com.hero.code.domain.use_case.GetCharactersList
 import com.hero.code.presentation.util.base.BaseViewModel
 import com.hero.code.presentation.view.character.details.CharacterDetailsNavData
 
@@ -22,7 +22,7 @@ class ShowCharacterViewModel constructor(
     }
 
     fun onCharacterSelected(character: Character?) {
-        character?.let{
+        character?.let {
             goTo(CharacterDetailsNavData(it))
         }
     }

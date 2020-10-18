@@ -9,11 +9,8 @@ import com.hero.code.R
 import com.hero.code.databinding.ActivityCharacterDetailsBinding
 import com.hero.code.domain.entity.character.Character
 import com.hero.code.presentation.util.extension.load
-import org.koin.android.viewmodel.ext.android.viewModel
 
 class CharacterDetailsActivity : AppCompatActivity() {
-
-    private val _viewModel: CharacterDetailsViewModel by viewModel()
 
     private lateinit var binding: ActivityCharacterDetailsBinding
     private val character by lazy { intent.getSerializableExtra(CHARACTER_EXTRA) as Character }
@@ -21,7 +18,6 @@ class CharacterDetailsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_character_details)
         setupUi()
         setupCharacterInfo()

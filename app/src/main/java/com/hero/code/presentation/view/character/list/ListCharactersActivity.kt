@@ -4,15 +4,16 @@ import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.google.android.material.tabs.TabLayoutMediator
 import com.hero.code.R
 import com.hero.code.databinding.ActivityListCharactersBinding
 import com.hero.code.presentation.util.dialog.DialogData
-import com.hero.code.presentation.util.extension.showDialog
 import com.hero.code.presentation.util.extension.onGoTo
+import com.hero.code.presentation.util.extension.setOnClickListenerById
+import com.hero.code.presentation.util.extension.showDialog
 import com.hero.code.presentation.util.query.QueryChangesHelper
 import org.koin.android.viewmodel.ext.android.viewModel
 
@@ -45,20 +46,23 @@ class ListCharactersActivity : AppCompatActivity() {
             buttonNextPage.setOnClickListener { characterViewPager.currentItem += 1 }
             buttonPreviousPage.setOnClickListener { characterViewPager.currentItem += -1 }
             searchViewCharacter.setOnQueryTextListener(QueryChangesHelper(_viewModel::onQuerySubmitted))
-            searchViewCharacter.findViewById<ImageView>(R.id.search_close_btn).setOnClickListener {
-                onQueryClosed()
-            }
+            searchViewCharacter.setOnClickListenerById(R.id.search_close_btn) { onQueryClosed() }
         }
     }
 
     private fun onListCharactersInfoReceived(info: ListCharactersInfo?) {
         info?.let {
-            adapter = ListCharactersAdapter(this, it.totalPages, it.query)
-            setupViewPager()
+            if (it.totalPages == 0) {
+                binding.emptyListLayout.visibility = View.VISIBLE
+            } else {
+                binding.emptyListLayout.visibility = View.GONE
+                adapter = ListCharactersAdapter(this, it.totalPages, it.query)
+                setupTabs()
+            }
         }
     }
 
-    private fun setupViewPager() {
+    private fun setupTabs() {
         currentTabLayoutMediator?.detach()
         binding.characterViewPager.adapter = adapter
         currentTabLayoutMediator = getTabLayoutMediator()

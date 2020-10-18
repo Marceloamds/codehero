@@ -35,10 +35,7 @@ abstract class BaseViewModel : ViewModel(), KoinComponent {
         _dialog.postValue(dialogData)
     }
 
-    protected fun setDialog(
-        throwable: Throwable,
-        retryAction: (() -> Unit)
-    ) {
+    protected fun setDialog(throwable: Throwable, retryAction: (() -> Unit)) {
         setDialog(errorHandler.getDialogData(throwable, retryAction))
     }
 

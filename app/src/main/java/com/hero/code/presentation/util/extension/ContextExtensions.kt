@@ -20,8 +20,8 @@ fun Context.showDialog(dialogData: DialogData): Dialog {
         builder.setPositiveButton(dialogData.dismissButtonText, dialogData.onDismiss)
     } else {
         builder.setPositiveButton(
-            dialogData.confirmButtonText, dialogData.onConfirm
-                ?: dialogData.onDismiss
+            dialogData.confirmButtonText,
+            dialogData.onConfirm ?: dialogData.onDismiss
         )
         if (dialogData.dismissButtonText != null || dialogData.onDismiss != null) {
             builder.setNegativeButton(dialogData.dismissButtonText, dialogData.onDismiss)
@@ -36,13 +36,13 @@ fun AlertDialog.Builder.setPositiveButton(buttonText: String?, onClick: (() -> U
     setPositiveButton(
         buttonText ?: context.getString(R.string.global_ok),
         onClick?.let { { _: DialogInterface, _: Int -> it() } }
-    )
+    ) ?: null
 
 fun AlertDialog.Builder.setNegativeButton(buttonText: String?, onClick: (() -> Unit)?) =
     setNegativeButton(
         buttonText ?: context.getString(R.string.global_cancel),
         onClick?.let { { _: DialogInterface, _: Int -> it() } }
-    )
+    ) ?: null
 
 fun Context.openBrowser(url: String?) {
     url?.let {

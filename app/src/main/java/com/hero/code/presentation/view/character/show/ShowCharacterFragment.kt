@@ -4,8 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import androidx.databinding.BindingAdapter
 import androidx.fragment.app.Fragment
 import com.hero.code.databinding.FragmentShowCharacterBinding
 import com.hero.code.databinding.ItemCharacterBinding
@@ -29,17 +27,18 @@ class ShowCharacterFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         binding = FragmentShowCharacterBinding.inflate(inflater, container, false)
         subscribeUi()
         return binding.root
     }
 
     private fun subscribeUi() {
-        _viewModel.charactersList.observe(viewLifecycleOwner, ::onCharactersReceived)
-        _viewModel.placeholder.observe(viewLifecycleOwner) {
-            binding.placeholderView.setPlaceholder(it)
+        with(_viewModel) {
+            charactersList.observe(viewLifecycleOwner, ::onCharactersReceived)
+            placeholder.observe(viewLifecycleOwner) { binding.placeholderView.setPlaceholder(it) }
+            goTo.observe(viewLifecycleOwner, ::onGoTo)
         }
-        _viewModel.goTo.observe(viewLifecycleOwner, ::onGoTo)
     }
 
     private fun onCharactersReceived(characterList: List<Character?>?) {
@@ -54,7 +53,8 @@ class ShowCharacterFragment : Fragment() {
     }
 
     private fun ItemCharacterBinding.setupCharacter(character: Character?) {
-        this.character = character
+        imageCharacter.circleLoad(character?.thumbnail)
+        textCharacterName.text = character?.name
         root.setOnClickListener { _viewModel.onCharacterSelected(character) }
     }
 
@@ -71,12 +71,6 @@ class ShowCharacterFragment : Fragment() {
             bundle.putInt(POSITION_EXTRA, position)
             bundle.putString(QUERY_EXTRA, query)
             arguments = bundle
-        }
-
-        @BindingAdapter("loadCharacterImage")
-        @JvmStatic
-        fun ImageView.loadCharacterImage(character: Character?) {
-            circleLoad(character?.thumbnail)
         }
     }
 }

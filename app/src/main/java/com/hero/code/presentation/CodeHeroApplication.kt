@@ -16,7 +16,7 @@ class CodeHeroApplication : Application() {
                     networkingModule(),
                     viewModelModule(),
                     repositoryModule(),
-                    interactorModule(),
+                    useCaseModule(),
                     resourceModule()
                 )
             )

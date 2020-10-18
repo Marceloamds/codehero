@@ -22,6 +22,7 @@ class DialogData(
             onDismiss: (() -> Unit)? = null,
             cancelable: Boolean? = true
         ): DialogData {
+
             return DialogData(
                 context.getString(R.string.error_title),
                 message,
